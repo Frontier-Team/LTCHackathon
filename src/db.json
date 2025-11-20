@@ -1,0 +1,652 @@
+{
+  "auctionWorks": [
+    {
+      "id": 1,
+      "name": "Colin Plaice",
+      "occupation": "Student",
+      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
+      "contact": [
+        "Website - https://illustrationtoxic.wixsite.com/illustration-toxic",
+        "Instagram - https://www.instagram.com/illustrations.toxic",
+        "LinkedIn - https://www.linkedin.com/in/colin-plaice-51b46927b"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 2,
+      "name": "Daria Naidonova",
+      "occupation": "Student",
+      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
+      "contact": [
+        "Instagram - https://www.instagram.com/naidenovka007"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 3,
+      "name": "Kayley Campbell",
+      "occupation": "Student",
+      "details": "Studying Product Design (MSc) at University of Dundee",
+      "contact": [
+        "Linktree - https://linktr.ee/GingerGhouls",
+        "LinkedIn - https://www.linkedin.com/in/kayley-campbell-7631a4219",
+        "Instagram - https://www.instagram.com/gingerghouls"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 4,
+      "name": "Anna Rae",
+      "occupation": "Jeweller",
+      "details": "Working at G&A Jewellers",
+      "contact": [
+        "Instagram - https://www.instagram.com/jewel_a_rae",
+        "Email - araejewellery@gmail.com"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 5,
+      "name": "Amy Rodger",
+      "occupation": "Design Researcher",
+      "details": "Researching at Scottish Widows",
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/amyrodgercs"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 6,
+      "name": "Yi Han",
+      "occupation": "Interaction Designer",
+      "details": "Designing at Scottish Widows",
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/yiiihan"
+      ],
+      "isFilterable": true
+    },
+    {
+      "id": 7,
+      "name": "Rachel White",
+      "occupation": "Junior Designer",
+      "details": "Designing at Scottish Widows",
+      "contact": [
+        "LinkedIn - https://www.linkedin.com/in/rachel-white-ba4078198"
+      ],
+      "isFilterable": true
+    }
+  ],
+  "schedule": [
+    {
+      "time": "09:00",
+      "description": "Tea, coffee and pastries on arrival."
+    },
+    {
+      "time": "09:30",
+      "description": "Welcome from Derek Shanks and an overview of the agenda. This will be followed by various sessions in St Giles, details of which can be found on the 'Agenda' tab."
+    },
+    {
+      "time": "11:05",
+      "description": "There will be a 15 minute break for you to grab a tea or a coffee."
+    },
+    {
+      "time": "11:20",
+      "description": "The talk schedule continues, again on the same tables and in St Giles."
+    },
+    {
+      "time": "13:00",
+      "description": "Lunch is served in Canongate with time for networking."
+    },
+    {
+      "time": "13:45",
+      "description": "Head to St Giles where you will be taken to the expo held in Dunedin."
+    },
+    {
+      "time": "14:40",
+      "description": "Quick break between expo sessions, with tea and coffee provided in Dunedin."
+    },
+    {
+      "time": "14:50",
+      "description": "Meet back in Dunedin for the expo, following which we will finish back in St Giles room for the final talks and closing remarks."
+    },
+    {
+      "time": "17:00",
+      "description": "Once the event is over, drinks and canapes will be provided in the Canongate room."
+    }
+  ],
+  "expos": [
+    {
+      "id": 1,
+      "name": "Adviser Reviser",
+      "description": "The adviser lab will give you a refresher of the adviser market, a run down of their systems and their plans for future delivery"
+    },
+    {
+      "id": 2,
+      "name": "Personalisation A/B Testing",
+      "description": "A/B Testing empowers fast, confident decisions backed by data optimising headlines, layouts and journeys helps us understand what truly matters."
+    },
+    {
+      "id": 3,
+      "name": "Accessibility",
+      "description": "We’ll outline our approach to accessibility testing—focusing on how we ensure that every digital experience we deliver is both functional and inclusive. This involves rigorous validation across a range of user scenarios, devices, and assistive technologies to confirm that our solutions meet accessibility standards and provide equitable access for all users."
+    },
+    {
+      "id": 4,
+      "name": "Gamifying User Experiences",
+      "description": "See how we are using games and gamified experiences to boost customer engagement and education. With live demos on new tools to the group like Unity and Rive as well as a hands on demo with our first gamified education experience brought to the Scottish Widows app."
+    },
+    {
+      "id": 5,
+      "name": "Connect Microservice",
+      "description": "Connect is a no-code/low-code orchestration platform that lets users build automated workflows—called Flows—using modular Blocks like Send SMS” or “Query Data.” It supports both synchronous and asynchronous actions and integrates easily with existing APIs. Trigger Options: Scheduled, ad hoc, and (soon) event-driven Tech Stack: NodeJS, Docker, Kubernetes, GCP Use Case: Notify customers of retirement payment progress via SMS using Pega and DCM3. Connect accelerates delivery by reusing existing business logic, improves developer experience through shared utilities, and is backed by strong documentation and cross-team collaboration."
+    },
+    {
+      "id": 6,
+      "name": "Content Square",
+      "description": "An introduction to ContentSquare, a new and creepy tool introduced to IP&I to help us better understand our customers usage of our digital estate."
+    },
+    {
+      "id": 7,
+      "name": "Interstellar",
+      "description": "In this session, the Interstellar team will explore how component-based architecture empowers engineers to build scalable, brand-consistent web journeys across multiple platforms—including Embark, Waterfront, and Enterprise environments."
+    },
+    {
+      "id": 8,
+      "name": "Predictive Engagement",
+      "description": "In this session, we’ll demonstrate how Genesys leverages AI-driven predictive engagement to optimise the customer journey for solar panel sales. By analysing user behaviour on the website, Genesys can assess the likelihood of a customer not completing a desired outcome—such as making a purchase—and proactively tailor support strategies."
+    }
+  ],
+  "talks": [
+    {
+      "id": 1,
+      "time": "09:30",
+      "topic": "Welcome and the Game Plan ahead!",
+      "speakers": [
+        "Derek Shanks"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 2,
+      "time": "09:40",
+      "topic": "Beginning of the People Adventure",
+      "speakers": [
+        "Rose Ulldemolins",
+        "Nick Grant"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 3,
+      "time": "09:55",
+      "topic": "Strategic Update",
+      "speakers": [
+        "Amit Thawani"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 4,
+      "time": "10:25",
+      "topic": "IVR Game",
+      "speakers": [
+        "Nick Grant"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 5,
+      "time": "10:35",
+      "topic": "GCOO Sustainability - Kettle v Logon",
+      "speakers": [
+        "Derek Shanks",
+        "Iain Frame"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 6,
+      "time": "11:05",
+      "topic": "Break",
+      "speakers": [],
+      "location": "Canongate"
+    },
+    {
+      "id": 7,
+      "time": "11:20",
+      "topic": "Strategic Update",
+      "speakers": [
+        "Amit Thawani"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 8,
+      "time": "11:55",
+      "topic": "IVR Game",
+      "speakers": [
+        "Nick Grant",
+        "Rose Ulldemolins"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 9,
+      "time": "12:05",
+      "topic": "Quantum Computing",
+      "speakers": [
+        "Professor Simon Gay, University of Glasgow"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 10,
+      "time": "12:50",
+      "topic": "Continuing the People Adventure",
+      "speakers": [
+        "Rose Ulldemolins",
+        "Nick Grant"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 11,
+      "time": "13:00",
+      "topic": "Networking lunch",
+      "speakers": [],
+      "location": "Canongate"
+    },
+    {
+      "id": 12,
+      "time": "13:45",
+      "topic": "Transition to Dunedin for Expo",
+      "speakers": [
+        "All"
+      ],
+      "location": "Dunedin"
+    },
+    {
+      "id": 13,
+      "time": "13:50",
+      "topic": "Waterfront Expo",
+      "speakers": [
+        "Waterfront Various Colleagues"
+      ],
+      "location": "Dunedin"
+    },
+    {
+      "id": 14,
+      "time": "14:40",
+      "topic": "Break",
+      "speakers": [],
+      "location": "Dunedin"
+    },
+    {
+      "id": 15,
+      "time": "14:50",
+      "topic": "Waterfront Expo",
+      "speakers": [
+        "Waterfront Various Colleagues"
+      ],
+      "location": "Dunedin"
+    },
+    {
+      "id": 16,
+      "time": "15:40",
+      "topic": "Transition back to St Giles from Expo",
+      "speakers": [
+        "All"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 17,
+      "time": "15:45",
+      "topic": "Results of People Adventure and IVR Game",
+      "speakers": [
+        "Rose Ulldemolins",
+        "Nick Grant"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 18,
+      "time": "15:55",
+      "topic": "Agentic AI",
+      "speakers": [
+        "Aritra Chakravarty"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 19,
+      "time": "16:55",
+      "topic": "Close",
+      "speakers": [
+        "Amit Thawani",
+        "Derek Shanks"
+      ],
+      "location": "St Giles"
+    },
+    {
+      "id": 20,
+      "time": "17:00",
+      "topic": "Social",
+      "speakers": [
+        ""
+      ],
+      "location": "Canongate"
+    }
+  ],
+  "jammers": [
+    {
+      "welcome": "Hello Jammers! 👋",
+      "welcomeDescription": "Here are some details about what you will be doing at the game jam. We can't wait to see what you create!",
+      "challengeTitle": "The Challenge",
+      "challengeDescription": "Create a game or gamified journey to help close the gender gap in pensions and investments.",
+      "judgingTitle": "Judging Criteria",
+      "judgingDescription": "Our judges will be considering the following when casting their vote: ",
+      "judgingCriteria": {
+        "criteria": [
+          {
+            "title": "Fun & Engaging",
+            "description": "We want to prioritise a fun, player-first experience when creating games. Does it convey the core idea well? Does it stand out? Would you play it again and again?"
+          },
+          {
+            "title": "Approachability & Accessibility",
+            "description": "Is your game easy to pick up and play? Can anyone play it? Have you taken into consideration different people's needs?"
+          },
+          {
+            "title": "Theme Interpretation & Creativity",
+            "description": "There is a challenge to solve, but it's up to you and your team on how you approach it. Does your game fit with the theme? Is your concept unique?"
+          },
+          {
+            "title": "Feasibility & Viability",
+            "description": "As we will take the winning idea forward, it's important for us to consider how realistic the solution is. Could this be built, supported and scaled within LBG? Does your game consider existing LBG technlogies, platforms and hosting capabilities?"
+          },
+          {
+            "title": "Technical Execution & Polish",
+            "description": "While the focus is on the process, we still want to showcase technical excellence. Does your game run smoothly? Are there any bugs? Have you solved a tricky technical problem?"
+          }
+        ],
+        "criteriaDescription": "If you would like a more detailed breakdown of the judging criteria, you can download it below."
+      },
+      "Pitches": {
+        "title": "Pitches",
+        "description": "On day two, all teams will pitch their game to their assigned coaches. Coaches will then shortlist teams to present to our judging panel.",
+        "length": "Each pitch should be 8 minutes, with an additional 2 minutes for questions.",
+        "presentation": "You can use slides, a live demo, or any other format you like to present your game. Be creative and have fun!",
+        "coachTime": "Pitches to the coaches will begin at 12:30pm",
+        "judgeTime": "Pitches to the judges will begin at 2:00pm"
+      },
+      "Awards": {
+        "description": "The winning teams will be announced at the end of day two, with prizes as follows:",
+        "awards": [
+          {
+            "title": "🥇 1st Place",
+            "prizes": {
+              "all": "You will be invited to LBG to bring your idea to life in the Scottish Widows App.\n\n Each team member will receive 1-2-1 mentorship from a Women ConnecTech mentor.\n\n Plus tickets to our Reboot conference in November."
+            }
+          },
+          {
+            "title": "🥈 2nd Place",
+            "prizes": {
+              "all": "Your team will receive career workshops and tickets to our Reboot conference in November."
+            }
+          },
+          {
+            "title": "🥉 3rd Place",
+            "prizes": {
+              "all": "Your team will receive career workshops"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "id": "r1",
+      "title": "Unity",
+      "type": "Games tools",
+      "description": "Create 2D and 3D games with a large ecosystem and asset store.",
+      "link": "https://unity.com/download"
+    },
+    {
+      "id": "r2",
+      "title": "Game Maker",
+      "type": "Games tools",
+      "description": "Beginner-friendly tool for building 2D games quickly.",
+      "link": "https://gamemaker.io/en/download"
+    },
+    {
+      "id": "r3",
+      "title": "Godot",
+      "type": "Games tools",
+      "description": "Open‑source engine for 2D/3D with an easy scene system.",
+      "link": "https://godotengine.org/"
+    },
+    {
+      "id": "r4",
+      "title": "Rive",
+      "type": "Design tools",
+      "description": "Real‑time vector animation tool for apps and games.",
+      "link": "https://rive.app/"
+    },
+    {
+      "id": "r5",
+      "title": "Figma",
+      "type": "Design tools",
+      "description": "Collaborative UI design and prototyping platform.",
+      "link": "https://www.figma.com/"
+    },
+    {
+      "id": "r6",
+      "title": "Canva",
+      "type": "Design tools",
+      "description": "Easy graphic design for presentations, posters and assets.",
+      "link": "https://www.canva.com/"
+    },
+    {
+      "id": "r7",
+      "title": "VS Code - React",
+      "type": "IDE's",
+      "description": "Lightweight editor ideal for React development.",
+      "link": "https://code.visualstudio.com/"
+    },
+    {
+      "id": "r8",
+      "title": "Rider - Unity",
+      "type": "IDE's",
+      "description": "JetBrains IDE with deep Unity integration and tooling.",
+      "link": "https://www.jetbrains.com/rider/"
+    },
+    {
+      "id": "r9",
+      "title": "Android Studio",
+      "type": "IDE's",
+      "description": "Official Android IDE for building and testing Android apps.",
+      "link": "https://developer.android.com/studio"
+    },
+    {
+      "id": "r10",
+      "title": "Xcode",
+      "type": "IDE's",
+      "description": "Apple's IDE for iOS, iPadOS and macOS development.",
+      "link": "https://developer.apple.com/xcode/"
+    },
+    {
+      "id": "r11",
+      "title": "Github",
+      "type": "Additional tools",
+      "description": "Version control and collaboration platform for code.",
+      "link": "https://github.com/"
+    },
+    {
+      "id": "r12",
+      "title": "Miro",
+      "type": "Additional tools",
+      "description": "Online whiteboard for brainstorming, mapping and planning.",
+      "link": "https://miro.com/"
+    },
+    {
+      "id": "r13",
+      "title": "Trello",
+      "type": "Additional tools",
+      "description": "Kanban boards to organise tasks and team workflow.",
+      "link": "https://trello.com/"
+    }
+  ],
+  "tutorials": [
+    {
+      "id": "t1",
+      "title": "Tic-Tac-Toe in React",
+      "type": "react",
+      "link": "https://react.dev/learn/tutorial-tic-tac-toe"
+    },
+    {
+      "id": "t2",
+      "title": "Get Started With React By Building A Whac-A-Mole Game",
+      "type": "react",
+      "link": "https://www.smashingmagazine.com/2021/05/get-started-whac-a-mole-react-game/"
+    },
+    {
+      "id": "t3",
+      "title": "Create a Snake Game in React",
+      "type": "react",
+      "link": "https://www.geeksforgeeks.org/create-a-snake-game-in-react/"
+    },
+    {
+      "id": "t4",
+      "title": "How to Build Tetris in React (with React Hooks!)",
+      "type": "react",
+      "link": "https://www.classcentral.com/classroom/freecodecamp-how-to-build-tetris-in-react-gamedev-tutorial-with-react-hooks-105031"
+    },
+    {
+      "id": "t5",
+      "title": "2D breakout game using pure JavaScript",
+      "type": "javascript",
+      "link": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript"
+    },
+    {
+      "id": "t6",
+      "title": "Introduction to Game Development with Javascript",
+      "type": "javascript",
+      "link": "https://daily.dev/blog/introduction-to-game-development-with-javascript"
+    },
+    {
+      "id": "t7",
+      "title": "JavaScript Game Development Course for Beginners",
+      "type": "javascript",
+      "link": "https://www.youtube.com/watch?v=GFO_txvwK_c"
+    },
+    {
+      "id": "t8",
+      "title": "Building a simple JavaScript game - A basic Game Engine",
+      "type": "javascript",
+      "link": "https://bengsfort.github.io/articles/making-a-js-game-part-1-game-engine/"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic1",
+      "title": "Investments",
+      "links": [
+        {
+          "title": "Investments",
+          "link": "https://www.scottishwidows.co.uk/investments.html"
+        },
+        {
+          "title": "Investing Basics",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/financial-essentials/investing-basics.html"
+        },
+        {
+          "title": "Options",
+          "link": "https://www.scottishwidows.co.uk/investments/options.html"
+        },
+        {
+          "title": "Ready Made Investments",
+          "link": "https://www.lloydsbank.com/investing/ways-to-invest/ready-made-investments.html"
+        }
+      ]
+    },
+    {
+      "id": "topic2",
+      "title": "Building Your Pension",
+      "links": [
+        {
+          "title": "Pension Transfer & Consolidation",
+          "link": "https://www.scottishwidows.co.uk/retirement/pension-transfers.html"
+        },
+        {
+          "title": "Taking on your Pension",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/taking-on-your-pension.html"
+        },
+        {
+          "title": "Open a Ready-Made Pension",
+          "link": "https://www.lloydsbank.com/pensions/ready-made-pension.html"
+        }
+      ]
+    },
+    {
+      "id": "topic3",
+      "title": "Accessing Your Pension",
+      "links": [
+        {
+          "title": "Your Retirement Options",
+          "link": "https://www.scottishwidowsbemoneywell.co.uk/taking-on-your-pension/retirement-options.html"
+        },
+        {
+          "title": "Cashing in your Pension",
+          "link": "https://take-my-pension.scottishwidows.co.uk"
+        },
+        {
+          "title": "Retirement Calculator",
+          "link": "https://www.scottishwidows.co.uk/retirement/calculators-tools.html"
+        },
+        {
+          "title": "Retirement Explained",
+          "link": "https://www.scottishwidows.co.uk/retirement/retirement-explained.html"
+        }
+      ]
+    }
+  ],
+  "genderGap": {
+    "pensions": [
+      {
+        "title": "Scottish Widows Retirement Report 2025",
+        "link": "https://adviser.scottishwidows.co.uk/assets/literature/docs/retirement-report-2025.pdf"
+      },
+      {
+        "title": "The Challenges Women Face With Retirement",
+        "link": "https://www.forbes.com/sites/melissahouston/2023/10/16/the-challenges-women-face-with-retirement-planning-and-how-to-overcome-them/"
+      },
+      {
+        "title": "Gender gap means retired women ‘have four months a year with no pension’",
+        "link": "https://www.theguardian.com/world/2025/aug/21/gender-pension-gap-7600-a-year-union-inequality-women"
+      },
+      {
+        "title": "How can we narrow the pension gender gap?",
+        "link": "https://www.moneyboxapp.com/learn/pensions/articles/how-can-we-narrow-the-pension-gender-gap/"
+      }
+    ],
+    "investing": [
+      {
+        "title": "Women in Investing",
+        "link": "https://www.lloydsbank.com/investing/landing-pages/women-in-investing.html"
+      },
+      {
+        "title": "The gender investing gap",
+        "link": "https://www.natwest.com/investments/our-insights/gender-investing-gap.html"
+      },
+      {
+        "title": "Mind The Gap: How Female Invest Is Changing The Narrative On Women And Wealth",
+        "link": "https://www.forbes.com/sites/angelachan/2025/03/25/mind-the-gap-how-female-invest-is-changing-the-narrative-on-women-and-wealth/"
+      },
+      {
+        "title": "Female Invest: The #1 Money App For Women",
+        "link": "https://www.femaleinvest.com/en-gb"
+      }
+    ]
+  }
+}
