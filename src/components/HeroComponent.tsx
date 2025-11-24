@@ -16,7 +16,7 @@ export default function HeroComponent() {
     <Wrapper>
       <GifImage
         src={hero}
-        alt="Game Jam Animation"
+        alt="CIO IP&I Hackathon banner"
         className={isImageLoaded ? "loaded" : ""}
       />
     </Wrapper>
