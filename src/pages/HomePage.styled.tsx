@@ -233,8 +233,12 @@ export const Footer = styled.div`
   text-align: center;
   padding: 1.5rem;
   background-color: ${({ theme }) => theme.colors.teal};
-  border-radius: 10px;
+  border-radius: 1rem;
   margin: 1rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin: 0;
+      border-radius: 0;
+  }
 `;
 
 export const FooterContent = styled.div`
@@ -252,6 +256,6 @@ export const FooterContent = styled.div`
   }
   
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 `;
