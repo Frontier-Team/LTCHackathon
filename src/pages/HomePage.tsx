@@ -59,20 +59,20 @@ export const HomePage: React.FC = () => {
         <ContentBody>
           <Section>
             <Subtitle>
-              We are thrilled to welcome all participants to the Game Jam event!
+              We are thrilled to welcome all participants to the CIO IP&I Hackathon event!
             </Subtitle>
           </Section>
           <Section>
-            <Subtitle>What you can expect of the day?</Subtitle>
+            <Subtitle>What is a Hackathon?</Subtitle>
             <Paragraph>
 
             </Paragraph>
             <Paragraph>
-              A Game Jam is a fast-paced, creative sprint where developers, designers, and innovators come together to prototype bold new ideas in game design. It’s a chance to experiment with fresh mechanics, art styles, and concept all with the added fun of time pressure.
+              A Hackathon is a fast-paced, creative sprint where developers, designers, and innovators come together to prototype bold new ideas. It’s a chance to experiment with the added fun of time pressure.
             </Paragraph>
             <Paragraph>
               You will join Seventy-two brilliant women and non-binary students to form teams of up to six to take on a real-world business challenge.
-              Your team will have just 48 hours to brainstorm, design, build and pitch a playable game prototype from scratch.
+              Your team will have just 48 hours to brainstorm, design, build and pitch an MVP from scratch.
             </Paragraph>
             <Paragraph>
               There will be volunteers and mentors available throughout the event to provide guidance and support.
@@ -148,8 +148,8 @@ export const HomePage: React.FC = () => {
             <Paragraph>
               If you need to make any adjustments or have any specific requests,
               please contact us at:{" "}
-              <a href="mailto:IPIEvents@lloydsbanking.com">
-                IPIEvents@lloydsbanking.com
+              <a href="mailto:IP&Ihackathon@lloydsbanking.com">
+                IP&Ihackathon@lloydsbanking.com
               </a>
             </Paragraph>
           </FooterContent>
