@@ -87,7 +87,7 @@ export const HomePage: React.FC = () => {
               Welcome to the CIO IP&I Hackathon!
             </WelcomeText>
           </WelcomeSection>
-          <Section as="section" aria-labelledby="hackathon-heading">
+          <Section as="section">
 
             <Paragraph>
               Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 colleagues to prototype bold new ideas.
