@@ -45,6 +45,12 @@ export const Heading = styled.h1`
 export const Paragraph = styled.p`
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const CenteredParagraph = styled(Paragraph)`

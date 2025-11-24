@@ -1,16 +1,40 @@
-import styled from "@emotion/styled";
 import React, { useEffect, useRef, useState } from "react";
+import { FaCalendarAlt, FaMapMarkerAlt, FaMapPin, FaWifi } from "react-icons/fa";
 import HeroComponent from "../components/HeroComponent";
 import { Paragraph } from "../styles/sharedStyles";
+import {
+  AddressText,
+  CloseButton,
+  Content,
+  ContentBody,
+  ContentCard,
+  Footer,
+  FooterContent,
+  IconWrapper,
+  MapFrame,
+  MapHover,
+  MapPopover,
+  MapToggleButton,
+  PopoverHeader,
+  Section,
+  SectionTitle,
+  WelcomeSection,
+  WelcomeText,
+  WifiNotice,
+  Wrapper,
+} from "./HomePage.styled";
 
 export const HomePage: React.FC = () => {
   const [mapOpen, setMapOpen] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const popoverRef = useRef<HTMLDivElement | null>(null);
 
   const closePopover = () => setMapOpen(false);
-  const togglePopover = () => setMapOpen((o) => !o);
-
+  const togglePopover = () => {
+    setHasInteracted(true);
+    setMapOpen((o) => !o);
+  };
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -39,50 +63,74 @@ export const HomePage: React.FC = () => {
     };
   }, [mapOpen]);
 
-
   useEffect(() => {
-    if (mapOpen) {
+    // Only manage focus after user has interacted with the map toggle
+    if (!hasInteracted) return;
 
+    if (mapOpen) {
       const closeBtn = popoverRef.current?.querySelector<HTMLButtonElement>(
         "button[data-close]"
       );
       closeBtn?.focus();
     } else {
-
       triggerRef.current?.focus();
     }
-  }, [mapOpen]);
+  }, [mapOpen, hasInteracted]);
+
   return (
     <Wrapper>
       <HeroComponent />
-      <Content>
+      <Content as="main" aria-label="Main content">
         <ContentBody>
-          <Section>
-            <Subtitle>
-              We are thrilled to welcome all participants to the CIO IP&I Hackathon event!
-            </Subtitle>
+          <WelcomeSection aria-labelledby="welcome-heading">
+            <WelcomeText id="welcome-heading">
+              Welcome to the CIO IP&I Hackathon!
+            </WelcomeText>
+          </WelcomeSection>
+          <Section as="section" aria-labelledby="hackathon-heading">
+
+            <Paragraph>
+              Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 colleagues to prototype bold new ideas.
+            </Paragraph>
+            <Paragraph>
+              Form teams of up to six and tackle a real-world business challenge. Brainstorm, design, build, and pitch a working MVP from scratch.
+            </Paragraph>
+            <Paragraph>
+              Volunteers and mentors are available throughout to guide you. Good luck, have fun, and let's innovate together!
+            </Paragraph>
           </Section>
-          <Section>
-            <Subtitle>What is a Hackathon?</Subtitle>
-            <Paragraph>
-
-            </Paragraph>
-            <Paragraph>
-              A Hackathon is a fast-paced, creative sprint where developers, designers, and innovators come together to prototype bold new ideas. It’s a chance to experiment with the added fun of time pressure.
-            </Paragraph>
-            <Paragraph>
-              You will join Seventy-two brilliant women and non-binary students to form teams of up to six to take on a real-world business challenge.
-              Your team will have just 48 hours to brainstorm, design, build and pitch an MVP from scratch.
-            </Paragraph>
-            <Paragraph>
-              There will be volunteers and mentors available throughout the event to provide guidance and support.
-            </Paragraph>
-
-
+          <Section as="section" aria-labelledby="event-details-heading">
+            <SectionTitle id="event-details-heading">
+              <IconWrapper><FaCalendarAlt /></IconWrapper>
+              Event Details
+            </SectionTitle>
+            <ContentCard>
+              <Paragraph>
+                <strong>Dates:</strong> Wednesday 10 and Thursday 11 December 2025
+              </Paragraph>
+              <Paragraph>
+                <strong>Time:</strong> 08:00 – 17:30 each day
+              </Paragraph>
+              <Paragraph>
+                <strong>Lunch:</strong> Day 1: 13:30 – 14:30 | Day 2: 13:15 – 13:45
+              </Paragraph>
+              <Paragraph>
+                Refreshments and snacks will be served throughout both days.
+              </Paragraph>
+            </ContentCard>
           </Section>
-          <Section>
-            <Subtitle>Getting here</Subtitle>
-            <Paragraph>
+          <Section as="section" aria-labelledby="location-heading">
+            <SectionTitle id="location-heading">
+              <IconWrapper><FaMapMarkerAlt /></IconWrapper>
+              Getting here
+            </SectionTitle>
+            <ContentCard>
+              <AddressText aria-label="Event location">
+                Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City Hyderabad, Telangana - 500081
+              </AddressText>
+              <Paragraph>
+                Transport between the University and Venue will be arranged by LTC
+              </Paragraph>
               <MapHover>
                 <MapToggleButton
                   ref={triggerRef}
@@ -91,20 +139,21 @@ export const HomePage: React.FC = () => {
                   aria-expanded={mapOpen}
                   aria-haspopup="dialog"
                   onClick={togglePopover}
-                  title="Show map"
+                  aria-label="Show map for event location"
                 >
-                  <strong>CodeBase Edinburgh</strong>
+                  <FaMapPin />
                 </MapToggleButton>
                 <MapPopover
                   ref={popoverRef}
                   role="dialog"
+                  aria-modal="true"
                   id="map-popover"
-                  aria-label="Map to CodeBase Edinburgh"
-                  aria-labelledby="map-toggle"
+                  aria-label="Interactive map showing event location"
                   data-open={mapOpen}
+                  aria-hidden={!mapOpen}
                 >
                   <PopoverHeader>
-                    <span>CodeBase Edinburgh</span>
+                    <span>Event Location</span>
                     <CloseButton
                       type="button"
                       data-close
@@ -115,214 +164,43 @@ export const HomePage: React.FC = () => {
                     </CloseButton>
                   </PopoverHeader>
                   <MapFrame
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.472922960234!2d-3.2010466480452937!3d55.947219646571654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7991a24de13%3A0x5727e05b4321b9f6!2sCodeBase!5e0!3m2!1sen!2suk!4v1759229636062!5m2!1sen!2suk"
-                    width="400"
-                    height="300"
-                    style={{ border: 0 }}
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395.85499019360776!2d78.3789896180973!3d17.430148513850565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300552ecdf9%3A0xbdaa716d8948f405!2sLloyds%20Technology%20Centre%20(%20Knowledge%20Park%20)!5e0!3m2!1sen!2suk!4v1763983338734!5m2!1sen!2suk"
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Google map showing CodeBase Edinburgh"
+                    title="Google map showing Hackathon Location in Hyderabad"
                   />
                 </MapPopover>
-              </MapHover>{" "}
-              37a Castle Terrace,
-              Edinburgh,
-              EH1 2EL
-            </Paragraph>
+              </MapHover>
+            </ContentCard>
           </Section>
 
-          <Section>
-            <Subtitle>CodeBase wifi</Subtitle>
-            <Paragraph>
-              Please connect to the Wi-Fi network using the credentials below.
-              <br></br>
-              <strong>Network Name: </strong>Visitor-Codebase
-              <br></br>
-              <strong>Password: </strong>castleterrace
-            </Paragraph>
+          <Section as="section" aria-labelledby="wifi-heading">
+            <SectionTitle id="wifi-heading">
+              <IconWrapper><FaWifi /></IconWrapper>
+              WiFi
+            </SectionTitle>
+            <ContentCard aria-label="WiFi connection information">
+              <WifiNotice>WiFi login will be available on the day</WifiNotice>
+            </ContentCard>
           </Section>
         </ContentBody>
-        <Footer>
+        <Footer as="footer" aria-label="Contact information">
           <FooterContent>
-            <Paragraph>
-              If you need to make any adjustments or have any specific requests,
-              please contact us at:{" "}
-              <a href="mailto:IP&Ihackathon@lloydsbanking.com">
+            <p>Questions? Contact us at{" "}
+              <a
+                href="mailto:IP&Ihackathon@lloydsbanking.com"
+                aria-label="Send email to IP&I Hackathon team at IP&Ihackathon@lloydsbanking.com"
+              >
                 IP&Ihackathon@lloydsbanking.com
               </a>
-            </Paragraph>
+            </p>
+            <p style={{ marginTop: '1rem' }}>
+              Our organisers and support team will be available to help during the event.
+            </p>
           </FooterContent>
         </Footer>
       </Content>
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  @media (max-width: 1300px) {
-    margin-top: 0;
-    padding: 0;
-
-  }
-
-  p {
-    line-height: 1.8;
-  }
-`;
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  padding: 0;
-  text-align: left;
-  margin: 2rem auto 0;
-  width: 100%;
-  box-sizing: border-box;
-`;
-
-const ContentBody = styled.div`
-  padding: 2rem;
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    padding-inline: clamp(1rem, 6vw, 1.5rem);
-  }
-`;
-
-const Section = styled.div``;
-
-const Subtitle = styled.h2`
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  line-height: 1.8;
-`;
-
-const MapPopover = styled.div`
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 0.5rem;
-  background: ${({ theme }) => theme.colors.white};
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  padding: 0.5rem;
-  z-index: 50;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-0.25rem);
-  transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
-
-  &[data-open='true'] {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  @media (max-width: 480px) {
-    position: fixed;
-    top: 1rem;
-    left: 10%;
-    transform: translate(-50%, 0);
-
-    max-width: none;
-  }
-`;
-
-const MapHover = styled.span`
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-
-  strong {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 2px;
-  }
-`;
-
-const MapToggleButton = styled.button`
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-
-  &:focus {
-    outline: 2px solid ${({ theme }) => theme.colors.teal};
-    outline-offset: 2px;
-    border-radius: 0.25rem;
-  }
-`;
-
-const PopoverHeader = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
-  color: #333;
-  font-weight: bold;
-`;
-
-const CloseButton = styled.button`
-  background: transparent;
-  border: none;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  color: #333;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.05);
-  }
-  &:focus {
-    outline: 2px solid ${({ theme }) => theme.colors.teal};
-    outline-offset: 2px;
-  }
-`;
-
-const MapFrame = styled.iframe`
-  width: 400px;
-  height: 300px;
-  max-width: 80vw;
-  border: 0;
-  border-radius: 8px;
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 260px;
-  }
-`;
-
-export const Footer = styled.div`
-  display: flex;
-  text-align: center;
-  padding: 20px;
-  background-color: ${({ theme }) => theme.colors.teal};
-  border-radius: 10px;
-  margin-top: 1rem;
-`;
-
-export const FooterContent = styled.div`
-  color: white;
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-`;
