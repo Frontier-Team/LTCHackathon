@@ -126,7 +126,7 @@ export const HomePage: React.FC = () => {
             </SectionTitle>
             <ContentCard>
               <AddressText aria-label="Event location">
-                Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City Hyderabad, Telangana - 500081
+                Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City, Hyderabad, Telangana - 500081
               </AddressText>
               <Paragraph>
                 Transport between the University and Venue will be arranged by LTC
