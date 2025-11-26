@@ -338,35 +338,104 @@
       "location": "Canongate"
     }
   ],
-  "jammers": [
+  "hackers": [
     {
-      "welcome": "Hello Jammers! 👋",
-      "welcomeDescription": "Here are some details about what you will be doing at the game jam. We can't wait to see what you create!",
-      "challengeTitle": "The Challenge",
-      "challengeDescription": "Create a game or gamified journey to help close the gender gap in pensions and investments.",
+      "welcome": "Hello Hackers! 👋",
+      "welcomeDescription": "Here are some details about what you will be doing at the hackathon. We can't wait to see what you create!",
+      "challengeTitle": "The Challenges",
+      "challengeDescription": "Choose one of the use cases below to tackle during the hackathon. Each challenge includes a business problem, hackable scope, and post-hackathon roadmap.",
+      "challenges": [
+        {
+          "id": "1.1",
+          "title": "Data: Improving IP&I Data Quality",
+          "businessProblem": "IP&I aims to have 80% of data on GCP by 2025. Manual data quality checks are slow and inconsistent. Need automated anomaly detection and remediation.",
+          "hackableScope": "Build an agentic solution that detects, categorizes, and remediates data quality issues autonomously",
+          "postHackathonRoadmap": "Can scale across IP&I's data estate and integrate with group data governance."
+        },
+        {
+          "id": "2.1",
+          "title": "D2C Growth: Creating a digital wallet to unlock digital assets",
+          "businessProblem": "Digital wallets are a requirement if IP&I wants to offer digital assets and IP&I is not technologically ready to offer digital wallet capabilities to customers",
+          "hackableScope": "Build a digital wallet prototype, utilising AI within the design.",
+          "postHackathonRoadmap": "A digital wallet unlocks future use cases (e.g. digital identity and tokenised assets)"
+        },
+        {
+          "id": "2.2",
+          "title": "D2C Growth: Financial Goal Coaching via Voice-Based Agentic Agent",
+          "businessProblem": "There is a gap in the market for a non-intrusive voice channel to coach customers on how to achieve their financial goals. This offering would give IP&I a complimentary USP to sit alongside the InvestAI proposition",
+          "hackableScope": "Create an AI voice-based coach to support customers to work through how to achieve their financial goals",
+          "postHackathonRoadmap": "Solution could be expanded to other guidance touchpoints (e.g. decumulation, protection needs etc.)"
+        },
+        {
+          "id": "3.1",
+          "title": "Customer/Client Services: Agentic AI Servicing Agent in Home Insurance",
+          "businessProblem": "Digital servicing journeys cover 85% of customer demands; remaining 15% require human agents. Building digital journeys for these is uneconomical meaning that human agents are required to support customers",
+          "hackableScope": "Create an AI servicing agent that can handle digital Home Insurance queries using available knowledge assets.",
+          "postHackathonRoadmap": "Solution can be extended into Insurance claims as well as other products within IP&I"
+        },
+        {
+          "id": "3.2",
+          "title": "Customer/Client Services: Automating Customer Communication Review for Compliance & Clarity",
+          "businessProblem": "IP&I Heritage produces over 3,500 types of customer letters. Reviewing these outputs against Consumer Duty standards and editorial tools (e.g., Acrolinx) is highly manual. Intensive process. Due to resource constraints, not all letters are reviewed, leading to unclear communications, increased contact centre calls, complaints, and rectification events.",
+          "hackableScope": "Build an Agentic AI-powered solution that can autonomously review structured and unstructured customer communication outputs against compliance and clarity standards, providing actionable insights and prioritisation for improvements.",
+          "postHackathonRoadmap": "Solution can extend to other customer-facing materials (call scripts, marketing documents) and scale across IP&I."
+        },
+        {
+          "id": "3.3",
+          "title": "Customer/Client Services: Streamlining Workplace Scheme Onboarding",
+          "businessProblem": "The scheme Onboarding journey is heavily manual with multiple human touchpoints. This will act as a bottleneck as the Workplace business grows.",
+          "hackableScope": "Develop an AI solution using various structured and unstructured feeds like: RAID logs, call summaries and tracking data to create a Project control tower to identify weekly risk and suggest actions for employers",
+          "postHackathonRoadmap": "Similar solution can be adopted to challenge the number of human touchpoints in other internal processes and add cognitive elapsed time reduction recommendations to similar processes"
+        },
+        {
+          "id": "4.1",
+          "title": "Bancassurance: Leveraging Banking Data to understand our Customers' Propensity to Protect",
+          "businessProblem": "Understanding what customers are most likely to require our protection products, meaning that we can nudge customers to relevant protection products at critical life moments (e.g. the birth of a child or moving home). By not leveraging banking data, we are missing out on a key source of insight into our customers and their needs.",
+          "hackableScope": "Develop an AI solution that uses banking data to identify our customers' 'Propensity to Protect'",
+          "postHackathonRoadmap": "Solution an extend to marketing personalisation and other Insurance products."
+        },
+        {
+          "id": "4.2",
+          "title": "Bancassurance: Leveraging Banking Data to Streamline Protection Underwriting",
+          "businessProblem": "Protection pricing does not leverage banking data, which could be used to reduce the need for manual underwriting (e.g. if purchasing habits indicated healthy habits). Manual underwriting is heavy, causing drop-offs and poor customer experience.",
+          "hackableScope": "Develop an AI solution that uses banking data to reduce manual underwriting.",
+          "postHackathonRoadmap": ""
+        },
+        {
+          "id": "5",
+          "title": "Actuarial: Replacing ResQ within the Insurance Actuarial Process to enable Proactive Risk and Reserving Confidence",
+          "businessProblem": "IP&I Finance uses ResQ in its reserving process, which is manual and fragmented, leading to delays in insights and decisions. Adverse trends are detected late, impacting pricing actions and reserve confidence. Opportunity exists for ML/AI to detect drivers earlier and trigger timely actions.",
+          "hackableScope": "Build an AI-driven resQ'ing solution that automates data ingestion, analysis, and reporting, replacing ResQ and reducing manual effort.",
+          "postHackathonRoadmap": "Solution can scale to other reserving models and portfolios across IP&I."
+        }
+      ],
       "judgingTitle": "Judging Criteria",
       "judgingDescription": "Our judges will be considering the following when casting their vote: ",
       "judgingCriteria": {
         "criteria": [
           {
-            "title": "Fun & Engaging",
-            "description": "We want to prioritise a fun, player-first experience when creating games. Does it convey the core idea well? Does it stand out? Would you play it again and again?"
+            "title": "Value and Proposition (20%)",
+            "description": "Business Value: Does the solution address a real problem or opportunity? Is it likely to deliver measurable impact for users, customers, or the organisation?\n\nMarket Overview: Is there a clear understanding of the market landscape? Has the team identified competitors, gaps, and potential for adoption or growth?"
           },
           {
-            "title": "Approachability & Accessibility",
-            "description": "Is your game easy to pick up and play? Can anyone play it? Have you taken into consideration different people's needs?"
+            "title": "Agentic Feasibility (20%)",
+            "description": "Agentic Architecture: Does the solution leverage agentic AI principles (autonomy, decision-making, multi-agent collaboration)? Is the approach technically sound and feasible within current or near-future capabilities?\n\nScalability & Integration: Can the solution be realistically implemented and scaled within your organisation's tech stack? Are integration points with existing systems considered?"
           },
           {
-            "title": "Theme Interpretation & Creativity",
-            "description": "There is a challenge to solve, but it's up to you and your team on how you approach it. Does your game fit with the theme? Is your concept unique?"
+            "title": "Innovation & Originality (20%)",
+            "description": "Creativity: Is the idea novel or does it offer a fresh approach to an existing challenge? Does it stand out from other submissions?\n\nTheme Alignment: How well does the solution embody the hackathon's theme of Agentic AI?"
           },
           {
-            "title": "Feasibility & Viability",
-            "description": "As we will take the winning idea forward, it's important for us to consider how realistic the solution is. Could this be built, supported and scaled within LBG? Does your game consider existing LBG technlogies, platforms and hosting capabilities?"
+            "title": "Technical Execution (20%)",
+            "description": "Functionality: Is there a working prototype or MVP? Does it demonstrate the core features and agentic capabilities?\n\nQuality & Robustness: Is the solution stable, well-documented, and free from major bugs? Is the technical approach well-justified?"
           },
           {
-            "title": "Technical Execution & Polish",
-            "description": "While the focus is on the process, we still want to showcase technical excellence. Does your game run smoothly? Are there any bugs? Have you solved a tricky technical problem?"
+            "title": "Usability & Accessibility (10%)",
+            "description": "User Experience: Is the solution intuitive and easy to use? Can users quickly understand and interact with the agentic AI features?\n\nAccessibility: Are there options or considerations for users with different needs or backgrounds?"
+          },
+          {
+            "title": "Presentation & Communication (10%)",
+            "description": "Pitch Quality: Is the team able to clearly articulate their idea, its value, and how agentic AI is applied? Is the presentation engaging and convincing?"
           }
         ],
         "criteriaDescription": "If you would like a more detailed breakdown of the judging criteria, you can download it below."
@@ -404,6 +473,36 @@
       }
     }
   ],
+  "homepage": {
+    "welcome": "Welcome to the CIO IP&I Hackathon!",
+    "intro": [
+      "Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 colleagues to prototype bold new ideas.",
+      "Form teams of up to five and tackle a real-world business challenge. Brainstorm, design, build, and pitch a working MVP from scratch.",
+      "Volunteers and mentors are available throughout to guide you. Good luck, have fun, and let's innovate together!"
+    ],
+    "eventDetails": {
+      "title": "Event Details",
+      "dates": "Wednesday 10 and Thursday 11 December 2025",
+      "time": "08:00 – 17:30 each day",
+      "lunch": "Day 1: 13:30 – 14:30 | Day 2: 13:15 – 13:45",
+      "refreshments": "Refreshments and snacks will be served throughout both days."
+    },
+    "location": {
+      "title": "Getting here",
+      "address": "Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City, Hyderabad, Telangana - 500081",
+      "transport": "Transport between the University and Venue will be arranged by LTC",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395.85499019360776!2d78.3789896180973!3d17.430148513850565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300552ecdf9%3A0xbdaa716d8948f405!2sLloyds%20Technology%20Centre%20(%20Knowledge%20Park%20)!5e0!3m2!1sen!2suk!4v1763983338734!5m2!1sen!2suk"
+    },
+    "wifi": {
+      "title": "WiFi",
+      "description": "WiFi login will be available on the day"
+    },
+    "footer": {
+      "contactText": "Questions? Contact us at",
+      "email": "IP&Ihackathon@lloydsbanking.com",
+      "supportText": "Our organisers and support team will be available to help during the event."
+    }
+  },
   "resources": [
     {
       "id": "r1",

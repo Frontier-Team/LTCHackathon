@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaMapPin, FaWifi } from "react-icons/fa";
 import HeroComponent from "../components/HeroComponent";
 import { Paragraph } from "../styles/sharedStyles";
+import db from "../db.json";
 import {
   AddressText,
   CloseButton,
@@ -29,6 +30,7 @@ export const HomePage: React.FC = () => {
   const [hasInteracted, setHasInteracted] = useState(false);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const popoverRef = useRef<HTMLDivElement | null>(null);
+  const home = db.homepage;
 
   const closePopover = () => setMapOpen(false);
   const togglePopover = () => {
@@ -84,52 +86,45 @@ export const HomePage: React.FC = () => {
         <ContentBody>
           <WelcomeSection aria-labelledby="welcome-heading">
             <WelcomeText id="welcome-heading">
-              Welcome to the CIO IP&I Hackathon!
+              {home.welcome}
             </WelcomeText>
           </WelcomeSection>
           <Section as="section">
-
-            <Paragraph>
-              Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 colleagues to prototype bold new ideas.
-            </Paragraph>
-            <Paragraph>
-              Form teams of up to six and tackle a real-world business challenge. Brainstorm, design, build, and pitch a working MVP from scratch.
-            </Paragraph>
-            <Paragraph>
-              Volunteers and mentors are available throughout to guide you. Good luck, have fun, and let's innovate together!
-            </Paragraph>
+            {home.intro.map((paragraph, index) => (
+              <Paragraph key={index}>{paragraph}</Paragraph>
+            ))}
           </Section>
           <Section as="section" aria-labelledby="event-details-heading">
             <SectionTitle id="event-details-heading">
               <IconWrapper><FaCalendarAlt /></IconWrapper>
-              Event Details
+              {home.eventDetails.title}
             </SectionTitle>
             <ContentCard>
               <Paragraph>
-                <strong>Dates:</strong> Wednesday 10 and Thursday 11 December 2025
+                <strong>Dates:</strong> {home.eventDetails.dates}
               </Paragraph>
               <Paragraph>
-                <strong>Time:</strong> 08:00 – 17:30 each day
+                <strong>Time:</strong> {home.eventDetails.time}
               </Paragraph>
               <Paragraph>
-                <strong>Lunch:</strong> Day 1: 13:30 – 14:30 | Day 2: 13:15 – 13:45
+                <strong>Lunch:</strong> {home.eventDetails.lunch}
               </Paragraph>
               <Paragraph>
-                Refreshments and snacks will be served throughout both days.
+                {home.eventDetails.refreshments}
               </Paragraph>
             </ContentCard>
           </Section>
           <Section as="section" aria-labelledby="location-heading">
             <SectionTitle id="location-heading">
               <IconWrapper><FaMapMarkerAlt /></IconWrapper>
-              Getting here
+              {home.location.title}
             </SectionTitle>
             <ContentCard>
               <AddressText aria-label="Event location">
-                Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City, Hyderabad, Telangana - 500081
+                {home.location.address}
               </AddressText>
               <Paragraph>
-                Transport between the University and Venue will be arranged by LTC
+                {home.location.transport}
               </Paragraph>
               <MapHover>
                 <MapToggleButton
@@ -164,7 +159,7 @@ export const HomePage: React.FC = () => {
                     </CloseButton>
                   </PopoverHeader>
                   <MapFrame
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395.85499019360776!2d78.3789896180973!3d17.430148513850565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300552ecdf9%3A0xbdaa716d8948f405!2sLloyds%20Technology%20Centre%20(%20Knowledge%20Park%20)!5e0!3m2!1sen!2suk!4v1763983338734!5m2!1sen!2suk"
+                    src={home.location.mapUrl}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -178,25 +173,25 @@ export const HomePage: React.FC = () => {
           <Section as="section" aria-labelledby="wifi-heading">
             <SectionTitle id="wifi-heading">
               <IconWrapper><FaWifi /></IconWrapper>
-              WiFi
+              {home.wifi.title}
             </SectionTitle>
             <ContentCard aria-label="WiFi connection information">
-              <WifiNotice>WiFi login will be available on the day</WifiNotice>
+              <WifiNotice>{home.wifi.description}</WifiNotice>
             </ContentCard>
           </Section>
         </ContentBody>
         <Footer as="footer" aria-label="Contact information">
           <FooterContent>
-            <p>Questions? Contact us at{" "}
+            <p>{home.footer.contactText}{" "}
               <a
-                href="mailto:IP&Ihackathon@lloydsbanking.com"
-                aria-label="Send email to IP&I Hackathon team at IP&Ihackathon@lloydsbanking.com"
+                href={`mailto:${home.footer.email}`}
+                aria-label={`Send email to IP&I Hackathon team at ${home.footer.email}`}
               >
-                IP&Ihackathon@lloydsbanking.com
+                {home.footer.email}
               </a>
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Our organisers and support team will be available to help during the event.
+              {home.footer.supportText}
             </p>
           </FooterContent>
         </Footer>
