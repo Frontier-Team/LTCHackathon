@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt } from "react-icons/fa";
+import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
@@ -7,11 +7,9 @@ import {
   Heading,
   PageContainer,
   Paragraph,
-  StyledCard,
 } from "../styles/sharedStyles";
 import {
   JudgingContainer,
-  PrizesContainer,
   ChallengeContent,
   ChallengeSection,
   SectionLabel,
@@ -22,6 +20,10 @@ import {
   ChallengeTitle,
   ExpandButton,
   ChallengeDetails,
+  SectionTitle,
+  TitleIconWrapper,
+  InfoList,
+  InfoItem,
 } from "./HackersPage.styled";
 
 export const HackersPage: React.FC = () => {
@@ -53,21 +55,45 @@ export const HackersPage: React.FC = () => {
         <Heading>{hacker.welcome}</Heading>
         <CenteredParagraph>{hacker.welcomeDescription}</CenteredParagraph>
 
-        <h2>{hacker.importantInfo.title}</h2>
-        {hacker.importantInfo.items.map((item, index) => (
-          <Paragraph key={index}>{item}</Paragraph>
-        ))}
+        <SectionTitle>
+          <TitleIconWrapper><FaLaptop /></TitleIconWrapper>
+          {hacker.importantInfo.title}
+        </SectionTitle>
+        <InfoList>
+          {hacker.importantInfo.items.map((item, index) => (
+            <InfoItem key={index}>{item}</InfoItem>
+          ))}
+        </InfoList>
 
-        <h2>{hacker.challengeTitle}</h2>
+        <SectionTitle>
+          <TitleIconWrapper><FaLightbulb /></TitleIconWrapper>
+          {hacker.challengeTitle}
+        </SectionTitle>
         <CenteredParagraph>{hacker.challengeDescription}</CenteredParagraph>
 
         <ChallengesGrid>
           {hacker.challenges.map((challenge) => (
             <ChallengeCard key={challenge.id} isExpanded={expandedChallenges[challenge.id]}>
-              <ChallengeHeader onClick={() => toggleChallenge(challenge.id)}>
-                <IconWrapper>{getChallengeIcon(challenge.id)}</IconWrapper>
+              <ChallengeHeader
+                onClick={() => toggleChallenge(challenge.id)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleChallenge(challenge.id);
+                  }
+                }}
+                aria-expanded={expandedChallenges[challenge.id]}
+                aria-label={`${challenge.title}. Click to ${expandedChallenges[challenge.id] ? 'collapse' : 'expand'} details`}
+              >
+                <IconWrapper aria-hidden="true">{getChallengeIcon(challenge.id)}</IconWrapper>
                 <ChallengeTitle>{challenge.title}</ChallengeTitle>
-                <ExpandButton isExpanded={expandedChallenges[challenge.id]}>
+                <ExpandButton
+                  isExpanded={expandedChallenges[challenge.id]}
+                  aria-hidden="true"
+                  tabIndex={-1}
+                >
                   <FaChevronDown />
                 </ExpandButton>
               </ChallengeHeader>
@@ -89,20 +115,22 @@ export const HackersPage: React.FC = () => {
           ))}
         </ChallengesGrid>
 
-        <h2>{hacker.Pitches.title}</h2>
+        <SectionTitle>
+          <TitleIconWrapper><FaMicrophone /></TitleIconWrapper>
+          {hacker.Pitches.title}
+        </SectionTitle>
         <Paragraph>{hacker.Pitches.description}</Paragraph>
         <Paragraph>{hacker.Pitches.length}</Paragraph>
-        <PrizesContainer>
-          <StyledCard>
-            <CenteredParagraph>{hacker.Pitches.coachTime}</CenteredParagraph>
-          </StyledCard>
-          <StyledCard>
-            <CenteredParagraph>{hacker.Pitches.judgeTime}</CenteredParagraph>
-          </StyledCard>
-          <Paragraph>{hacker.Pitches.presentation}</Paragraph>
-        </PrizesContainer>
+        <Paragraph>{hacker.Pitches.presentation}</Paragraph>
+        <InfoList>
+          <InfoItem>{hacker.Pitches.coachTime}</InfoItem>
+          <InfoItem>{hacker.Pitches.judgeTime}</InfoItem>
+        </InfoList>
 
-        <h2>{hacker.judgingTitle}</h2>
+        <SectionTitle>
+          <TitleIconWrapper><FaGavel /></TitleIconWrapper>
+          {hacker.judgingTitle}
+        </SectionTitle>
         <Paragraph>{hacker.judgingDescription}</Paragraph>
         <JudgingContainer>
           {hacker.judgingCriteria.criteria.map((criteria, index) => (
@@ -135,7 +163,10 @@ export const HackersPage: React.FC = () => {
         </JudgingContainer>
       </>
       <>
-        <h2>Winners</h2>
+        <SectionTitle>
+          <TitleIconWrapper><FaTrophy /></TitleIconWrapper>
+          Winners
+        </SectionTitle>
         <Paragraph>Judges will deliberate and will announce the winners at 5pm.</Paragraph>
       </>
     </PageContainer>

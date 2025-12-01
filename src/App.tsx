@@ -5,7 +5,6 @@ import { ConductPage } from "./pages/ConductPage";
 import { HomePage } from "./pages/HomePage";
 import { HackersPage } from "./pages/HackersPage";
 import { AppThemeProvider } from "./providers/ThemeProvider";
-import ResourcesPage from "./pages/ResourcesPage";
 import { TalkAgendaPage } from "./pages/TalkAgendaPage";
 
 export const App = () => {
@@ -18,7 +17,6 @@ export const App = () => {
           <Route path="/conduct" element={<ConductPage />} />
           <Route path="/schedule" element={<TalkAgendaPage />} />
           <Route path="/hack" element={<HackersPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/conduct" element={<ConductPage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
         </Routes>

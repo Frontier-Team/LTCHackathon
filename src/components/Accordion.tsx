@@ -23,7 +23,6 @@ const AccordionTitle = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: none;
   transition: background 0.2s ease;
   color: inherit;
   text-decoration: none;
@@ -31,6 +30,24 @@ const AccordionTitle = styled.button`
 
   &:hover {
     background: ${({ theme }) => theme.colors.teal}10;
+    
+    svg {
+      color: ${({ theme }) => theme.colors.turquoise};
+    }
+  }
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.teal};
+    outline-offset: -2px;
+    background: ${({ theme }) => theme.colors.teal}10;
+    
+    svg {
+      color: ${({ theme }) => theme.colors.turquoise};
+    }
   }
 
   svg {
