@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown } from "react-icons/fa";
+import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
@@ -8,7 +8,6 @@ import {
   PageContainer,
   Paragraph,
   StyledCard,
-  SubHeading,
 } from "../styles/sharedStyles";
 import {
   JudgingContainer,
@@ -42,7 +41,7 @@ export const HackersPage: React.FC = () => {
       "3.2": <FaFileAlt />,
       "3.3": <FaChartLine />,
       "4.1": <FaHome />,
-      "4.2": <FaHome />,
+      "4.2": <FaShieldAlt />,
       "5": <FaCalculator />,
     };
     return icons[id] || <FaDatabase />;
@@ -53,6 +52,11 @@ export const HackersPage: React.FC = () => {
       <>
         <Heading>{hacker.welcome}</Heading>
         <CenteredParagraph>{hacker.welcomeDescription}</CenteredParagraph>
+
+        <h2>{hacker.importantInfo.title}</h2>
+        {hacker.importantInfo.items.map((item, index) => (
+          <Paragraph key={index}>{item}</Paragraph>
+        ))}
 
         <h2>{hacker.challengeTitle}</h2>
         <CenteredParagraph>{hacker.challengeDescription}</CenteredParagraph>
@@ -108,12 +112,12 @@ export const HackersPage: React.FC = () => {
                   {paragraph.split('\n').map((line, lIndex) => {
                     const colonIndex = line.indexOf(':');
                     if (colonIndex !== -1) {
-                      const beforeColon = line.substring(0, colonIndex);
-                      const afterColon = line.substring(colonIndex);
+                      const beforeColon = line.substring(0, colonIndex + 1);
+                      const afterColon = line.substring(colonIndex + 1);
                       return (
                         <React.Fragment key={lIndex}>
                           {lIndex > 0 && <br />}
-                          <strong>{beforeColon}</strong>{afterColon}
+                          <strong style={{ color: '#6CF479' }}>{beforeColon}</strong>{afterColon}
                         </React.Fragment>
                       );
                     }
@@ -132,24 +136,7 @@ export const HackersPage: React.FC = () => {
       </>
       <>
         <h2>Winners</h2>
-        <Paragraph>{hacker.Awards.description}</Paragraph>
-        <PrizesContainer>
-          {hacker.Awards.awards.map((award, index) => (
-            <StyledCard key={index}>
-              <SubHeading>
-                {award.title.split("\n").map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </SubHeading>
-              <CenteredParagraph style={{ marginBottom: "0" }}>
-                {award.prizes.all}
-              </CenteredParagraph>
-            </StyledCard>
-          ))}
-        </PrizesContainer>
+        <Paragraph>Judges will deliberate and will announce the winners at 5pm.</Paragraph>
       </>
     </PageContainer>
   );

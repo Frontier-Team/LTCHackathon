@@ -33,12 +33,14 @@ export const ChallengesGrid = styled.div`
 
 export const ChallengeCard = styled.div<{ isExpanded?: boolean }>`
   background: ${({ theme }) => theme.colors.white};
-  border: 2px solid ${({ theme }) => theme.colors.teal};
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-shadow: ${({ isExpanded }) =>
-    isExpanded ? '0 4px 12px rgba(0, 106, 77, 0.2)' : '0 2px 4px rgba(0, 106, 77, 0.1)'};
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
 `;
 
 export const ChallengeHeader = styled.div`
@@ -48,6 +50,7 @@ export const ChallengeHeader = styled.div`
   padding: 1.25rem;
   cursor: pointer;
   transition: background 0.2s ease;
+  min-height: 88px;
 
   &:hover {
     background: ${({ theme }) => theme.colors.teal}10;
@@ -108,10 +111,11 @@ export const ChallengeContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding: 0 1.25rem 1.5rem 1.25rem;
-  border-top: 1px solid ${({ theme }) => theme.colors.teal}20;
+  padding: 1.25rem;
+  background: ${({ theme }) => theme.colors.teal};
   font-size: 0.95rem;
   line-height: 1.6;
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const ChallengeSection = styled.div`
@@ -123,7 +127,7 @@ export const ChallengeSection = styled.div`
 export const SectionLabel = styled.h4`
   font-size: 0.9rem;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.teal};
+  color: ${({ theme }) => theme.colors.turquoise};
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0 0 0.5rem 0;

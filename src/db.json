@@ -342,8 +342,15 @@
     {
       "welcome": "Hello Hackers! 👋",
       "welcomeDescription": "Here are some details about what you will be doing at the hackathon. We can't wait to see what you create!",
+      "importantInfo": {
+        "title": "Devices and Set-Up",
+        "items": [
+            "Please bring your own personal devices to participate.",
+          "You will code in a sandbox environment enabled for these 2 days. Login details will be provided at the venue."
+        ]
+      },
       "challengeTitle": "The Challenges",
-      "challengeDescription": "Choose one of the use cases below to tackle during the hackathon. Each challenge includes a business problem, hackable scope, and post-hackathon roadmap.",
+      "challengeDescription": "Your team will be allocated one of the use cases below to tackle during the hackathon.",
       "challenges": [
         {
           "id": "1.1",
@@ -443,10 +450,10 @@
       "Pitches": {
         "title": "Pitches",
         "description": "On day two, all teams will pitch their game to their assigned coaches. Coaches will then shortlist teams to present to our judging panel.",
-        "length": "Each pitch should be 8 minutes, with an additional 2 minutes for questions.",
+        "length": "Teams will have 5 minutes each to pitch to coaches. Shortlisted hackers will have 8 minutes + 2 minutes for Q&A when pitching to judges.",
         "presentation": "You can use slides, a live demo, or any other format you like to present your game. Be creative and have fun!",
-        "coachTime": "Pitches to the coaches will begin at 12:30pm",
-        "judgeTime": "Pitches to the judges will begin at 2:00pm"
+        "coachTime": "Pitches to the coaches will begin at 12:15pm",
+        "judgeTime": "Pitches to the judges will begin at 2:15pm"
       },
       "Awards": {
         "description": "The winning teams will be announced at the end of day two, with prizes as follows:",

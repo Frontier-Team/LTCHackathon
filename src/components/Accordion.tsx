@@ -6,38 +6,31 @@ import { StyledCard } from "../styles/sharedStyles";
 const AccordionSection = styled(StyledCard)`
   margin-bottom: 1rem;
   overflow: hidden;
+  padding: 0;
 `;
 
 const AccordionTitle = styled.button`
   width: 100%;
   text-align: left;
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1.25rem;
   font-weight: 400;
   font-family: "GT Ultra", sans-serif;
   letter-spacing: 1px;
-  background: ${({ theme }) => theme.colors.grey};
+  background: ${({ theme }) => theme.colors.white};
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   outline: none;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
   color: inherit;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 
-  &:focus {
-    color: ${({ theme }) => theme.colors.lavenderPurple};
-  }
-
   &:hover {
-    color: ${({ theme }) => theme.colors.lavenderPurple};
-
-    svg {
-      color: ${({ theme }) => theme.colors.lavenderPurple};
-    }
+    background: ${({ theme }) => theme.colors.teal}10;
   }
 
   svg {
@@ -45,18 +38,23 @@ const AccordionTitle = styled.button`
     height: 1.5rem;
     margin-left: 1rem;
     flex-shrink: 0;
-    opacity: 0.5;
+    color: ${({ theme }) => theme.colors.teal};
+    transition: color 0.2s ease;
   }
 `;
 
 const AccordionContent = styled.div<{ isOpen: boolean }>`
   max-height: ${({ isOpen }) => (isOpen ? "1000px" : "0")};
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: ${({ isOpen }) => (isOpen ? "1rem" : "0 1rem")};
-  background: ${({ theme }) => theme.colors.grey};
-  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-  color: inherit;
+  transition: max-height 0.4s ease;
+  background: ${({ theme, isOpen }) => (isOpen ? theme.colors.teal : 'transparent')};
+  color: ${({ theme }) => theme.colors.white};
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: ${({ isOpen }) => (isOpen ? "1.25rem" : "0")};
+  font-size: 0.95rem;
+  line-height: 1.6;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 `;
