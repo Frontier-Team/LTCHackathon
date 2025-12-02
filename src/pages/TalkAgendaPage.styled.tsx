@@ -108,15 +108,13 @@ export const TimelineCard = styled.div<{
   max-width: 420px;
   width: 100%;
   box-sizing: border-box;
-  padding: 2.7rem 1.75rem 1.6rem;
+  padding: 2.3rem 1.75rem 2.3rem;
   border-radius: 18px;
   background: ${({ variant, theme }) =>
     variant === "primary" ? theme.colors.teal : theme.colors.white};
-  color: ${({ variant }) =>
-    variant === "primary" ? "white" : "black"};
+  color: ${({ variant }) => (variant === "primary" ? "white" : "black")};
   border: 2px solid ${({ theme }) => theme.colors.teal};
   box-shadow: 0 10px 28px ${({ theme }) => theme.colors.teal}26;
-
   ${({ side }) =>
     side === "left" ? "margin-right: 3rem;" : "margin-left: 3rem;"}
 
