@@ -27,7 +27,7 @@ export const DayTab = styled.div<{ active: boolean }>`
   border-bottom: ${({ active, theme }) =>
     active ? `3px solid ${theme.colors.teal}` : "3px solid transparent"};
   color: ${({ active, theme }) =>
-    active ? theme.colors.teal : "rgba(0,0,0,0.8)"};
+    active ? theme.colors.teal : `color-mix(in srgb, ${theme.colors.teal} 50%, transparent)`};
   transition: all 0.2s ease;
 
   &:hover {
@@ -38,9 +38,14 @@ export const DayTab = styled.div<{ active: boolean }>`
     border-bottom: none;
     border-radius: 999px;
     background: ${({ active, theme }) =>
-      active ? theme.colors.grey : "transparent"};
-    color: ${({ active }) =>
-      active ? "rgba(0,0,0,0.8)" : "rgba(0,0,0,0.8)"};
+      active ? theme.colors.teal : theme.colors.grey};
+    color: ${({ active, theme }) =>
+      active ? theme.colors.white : theme.colors.teal};
+
+    &:hover {
+      color: ${({ active, theme }) =>
+        active ? theme.colors.white : theme.colors.teal};
+    }
   }
 `;
 
@@ -103,15 +108,14 @@ export const TimelineCard = styled.div<{
   max-width: 420px;
   width: 100%;
   box-sizing: border-box;
-
   padding: 2.7rem 1.75rem 1.6rem;
   border-radius: 18px;
   background: ${({ variant, theme }) =>
     variant === "primary" ? theme.colors.teal : theme.colors.white};
   color: ${({ variant }) =>
-    variant === "primary" ? "white" : "rgba(0,0,0,0.8)"};
+    variant === "primary" ? "white" : "black"};
   border: 2px solid ${({ theme }) => theme.colors.teal};
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 10px 28px ${({ theme }) => theme.colors.teal}26;
 
   ${({ side }) =>
     side === "left" ? "margin-right: 3rem;" : "margin-left: 3rem;"}
@@ -138,7 +142,7 @@ export const IconCircle = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 6px 16px ${({ theme }) => theme.colors.teal}38;
   z-index: 2;
 
   @media (max-width: 768px) {
@@ -166,8 +170,8 @@ export const CardPresenters = styled.h4<{ variant?: "primary" | "outline" }>`
   font-weight: 600;
   margin: 0 0 0.65rem;
   opacity: 0.9;
-  color: ${({ variant }) =>
-    variant === "primary" ? "white" : "rgba(0,0,0,0.8)"};
+  color: ${({ variant, theme }) =>
+    variant === "primary" ? "white" : `${theme.colors.black}CC`};
 `;
 
 export const CardDash = styled.div<{ variant?: "primary" | "outline" }>`
@@ -175,14 +179,14 @@ export const CardDash = styled.div<{ variant?: "primary" | "outline" }>`
   font-weight: 700;
   margin: 0.35rem 0 0.65rem;
   opacity: 0.9;
-  color: ${({ variant }) =>
-    variant === "primary" ? "white" : "rgba(0,0,0,0.8)"};
+  color: ${({ variant, theme }) =>
+    variant === "primary" ? "white" : `${theme.colors.black}CC`};
 `;
 
 export const CardPurpose = styled.p<{ variant?: "primary" | "outline" }>`
   font-size: 0.86rem;
   line-height: 1.6;
   margin: 0;
-  color: ${({ variant }) =>
-    variant === "primary" ? "white" : "rgba(0,0,0,0.8)"};
+  color: ${({ variant, theme }) =>
+    variant === "primary" ? "white" : `${theme.colors.black}CC`};
 `;

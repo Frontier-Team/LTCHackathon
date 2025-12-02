@@ -218,10 +218,21 @@ const formatTimeRange = (slot: AgendaSlot) =>
   slot.end ? `${slot.start} – ${slot.end}` : slot.start;
 
 const formatPresenterLine = (presenter?: string) => {
-  const p = presenter?.trim() || "All attendees";
-  const generics =
-    /(attendees|coaches|judges|participants|other attendees)/i;
-  const prefix = generics.test(p) ? "For" : "By";
+  let p = presenter?.trim() || "all attendees";
+
+  const lower = p.toLowerCase();
+
+  if (lower === "all attendees") {
+    p = "all attendees";
+  } else if (lower === "all other attendees") {
+    p = "all other attendees";
+  }
+
+  const genericKeywords = ["attendees", "judges", "participants", "other attendees"];
+  const isGeneric = genericKeywords.some(word => lower.includes(word));
+
+  const prefix = isGeneric ? "For" : "By";
+
   return `${prefix} ${p}`;
 };
 
