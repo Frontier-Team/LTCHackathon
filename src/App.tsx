@@ -3,9 +3,8 @@ import { NavBar } from "./components/NavBar";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
 import { ConductPage } from "./pages/ConductPage";
 import { HomePage } from "./pages/HomePage";
-import { JammerPage } from "./pages/JammerPage";
+import { HackersPage } from "./pages/HackersPage";
 import { AppThemeProvider } from "./providers/ThemeProvider";
-import ResourcesPage from "./pages/ResourcesPage";
 import { TalkAgendaPage } from "./pages/TalkAgendaPage";
 
 export const App = () => {
@@ -17,10 +16,9 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/conduct" element={<ConductPage />} />
           <Route path="/agenda" element={<TalkAgendaPage />} />
-          <Route path="/jammers" element={<JammerPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/hack" element={<HackersPage />} />
           <Route path="/conduct" element={<ConductPage />} />
-          <Route path="/accessibility" element={<AccessibilityPage />} />  
+          <Route path="/accessibility" element={<AccessibilityPage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
