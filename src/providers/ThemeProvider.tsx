@@ -12,7 +12,8 @@ const theme = {
     lilac: "#303033",
     lilacShade: "#000",
     darkPink: "#FFCCD9",
-    lavenderPurple: "#C891FF"
+    lavenderPurple: "#C891FF",
+    black: "#000000"
   },
   breakpoints: {
     sm: "576px",
