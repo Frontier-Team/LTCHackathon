@@ -91,9 +91,15 @@ export const ContentCard = styled.div`
   background: ${({ theme }) => theme.colors.grey};
   border-radius: 12px;
   padding: 2rem;
-  border: 1px solid ${({ theme }) => theme.colors.teal};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  }
   
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding: 1.5rem;

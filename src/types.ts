@@ -18,3 +18,21 @@ export interface Expo {
   name: string;
   description: string;
 }
+
+export interface ConductValue {
+  name: string;
+  description: string;
+  icon: string;
+}
+
+export interface Conduct {
+  title: string;
+  introduction: string;
+  whatWeWantFromYou: {
+    title: string;
+    items: string[];
+  };
+  valuesTitle: string;
+  values: ConductValue[];
+  closing: string;
+}

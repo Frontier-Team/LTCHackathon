@@ -67,12 +67,9 @@ export const ValueCard = styled.div`
   margin-top: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
 
 
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     flex-direction: column;
@@ -92,3 +89,6 @@ export const Icon = styled.div`
     font-size: 3rem;
   }
 `;
+
+
+
