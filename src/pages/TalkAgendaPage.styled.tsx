@@ -125,6 +125,7 @@ export const TimelineCard = styled.div<{
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
     margin-left: 64px;
+    padding: 1.6rem 1.75rem 1.6rem;
   }
 `;
 
