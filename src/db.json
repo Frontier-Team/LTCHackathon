@@ -49,7 +49,7 @@
         ]
       },
       "challengeTitle": "The Challenges",
-      "challengeDescription": "Your team will be allocated one of the use cases below to tackle during the hackathon.",
+      "challengeDescription": "Your team will be allocated a challenge based on a problem statement. The theme for the Hackathon is Agentic AI.",
       "challenges": [
         {
           "id": "1.1",
@@ -182,7 +182,7 @@
   "homepage": {
     "welcome": "Welcome to the CIO IP&I Hackathon!",
     "intro": [
-      "Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 colleagues to prototype bold new ideas.",
+      "Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 participants to prototype bold new ideas.",
       "Form teams of up to five and tackle a real-world business challenge. Brainstorm, design, build, and pitch a working MVP from scratch.",
       "Volunteers and mentors are available throughout to guide you. Good luck, have fun, and let's innovate together!"
     ],
@@ -485,7 +485,7 @@
       },
       {
         "name": "Trust",
-        "description": "Assume colleagues are working in our best interests and trust them in their endeavours.",
+        "description": "Assume peers are working in our best interests and trust them in their endeavours.",
         "icon": "FaHandshake"
       },
       {
@@ -495,7 +495,7 @@
       },
       {
         "name": "People First",
-        "description": "Treat each other with respect and go the extra mile to support your colleagues. Be prepared to provide those around you with help, guidance and support.",
+        "description": "Treat each other with respect and go the extra mile to support your peers. Be prepared to provide those around you with help, guidance and support.",
         "icon": "FaHeart"
       }
     ],

@@ -54,7 +54,7 @@ const accessibilityItems = [
   {
     title: "Smell",
     description:
-      "We have asked colleagues not to wear fragrance where possible.",
+      "We have asked attendees not to wear fragrance where possible.",
     emoji: "👃",
   },
   {
@@ -80,7 +80,7 @@ export const SupportPage = () => {
 
   return (
     <PageContainer>
-      <Heading>Accessibility</Heading>
+      <Heading>Support</Heading>
 
       <CenteredParagraph>
         We strive to create an event where everyone can succeed. This means removing barriers, offering reasonable adjustments, and ensuring accessible tools and flexible arrangements. If you need any adjustments on the day, speak to an organiser or supporter. Or email us in advance at{" "}

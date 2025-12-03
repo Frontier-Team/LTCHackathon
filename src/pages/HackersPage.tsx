@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
+import React from "react";
+// import React, { useState } from "react";
+// import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
+import {  FaMicrophone, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
@@ -10,16 +12,16 @@ import {
 } from "../styles/sharedStyles";
 import {
   JudgingContainer,
-  ChallengeContent,
-  ChallengeSection,
-  SectionLabel,
-  ChallengesGrid,
-  ChallengeCard,
-  ChallengeHeader,
-  IconWrapper,
-  ChallengeTitle,
-  ExpandButton,
-  ChallengeDetails,
+  // ChallengeContent,
+  // ChallengeSection,
+  // SectionLabel,
+  // ChallengesGrid,
+  // ChallengeCard,
+  // ChallengeHeader,
+  // IconWrapper,
+  // ChallengeTitle,
+  // ExpandButton,
+  // ChallengeDetails,
   SectionTitle,
   TitleIconWrapper,
   InfoList,
@@ -28,26 +30,26 @@ import {
 
 export const HackersPage: React.FC = () => {
   const hacker = db.hackers[0];
-  const [expandedChallenges, setExpandedChallenges] = useState<Record<string, boolean>>({});
+  // const [expandedChallenges, setExpandedChallenges] = useState<Record<string, boolean>>({});
 
-  const toggleChallenge = (id: string) => {
-    setExpandedChallenges(prev => ({ ...prev, [id]: !prev[id] }));
-  };
+  // const toggleChallenge = (id: string) => {
+  //   setExpandedChallenges(prev => ({ ...prev, [id]: !prev[id] }));
+  // };
 
-  const getChallengeIcon = (id: string) => {
-    const icons: Record<string, JSX.Element> = {
-      "1.1": <FaDatabase />,
-      "2.1": <FaWallet />,
-      "2.2": <FaMicrophone />,
-      "3.1": <FaRobot />,
-      "3.2": <FaFileAlt />,
-      "3.3": <FaChartLine />,
-      "4.1": <FaHome />,
-      "4.2": <FaShieldAlt />,
-      "5": <FaCalculator />,
-    };
-    return icons[id] || <FaDatabase />;
-  };
+  // const getChallengeIcon = (id: string) => {
+  //   const icons: Record<string, JSX.Element> = {
+  //     "1.1": <FaDatabase />,
+  //     "2.1": <FaWallet />,
+  //     "2.2": <FaMicrophone />,
+  //     "3.1": <FaRobot />,
+  //     "3.2": <FaFileAlt />,
+  //     "3.3": <FaChartLine />,
+  //     "4.1": <FaHome />,
+  //     "4.2": <FaShieldAlt />,
+  //     "5": <FaCalculator />,
+  //   };
+  //   return icons[id] || <FaDatabase />;
+  // };
 
   return (
     <PageContainer>
@@ -71,7 +73,7 @@ export const HackersPage: React.FC = () => {
         </SectionTitle>
         <CenteredParagraph>{hacker.challengeDescription}</CenteredParagraph>
 
-        <ChallengesGrid>
+        {/* <ChallengesGrid>
           {hacker.challenges.map((challenge) => (
             <ChallengeCard key={challenge.id} isExpanded={expandedChallenges[challenge.id]}>
               <ChallengeHeader
@@ -113,7 +115,7 @@ export const HackersPage: React.FC = () => {
               </ChallengeDetails>
             </ChallengeCard>
           ))}
-        </ChallengesGrid>
+        </ChallengesGrid> */}
 
         <SectionTitle>
           <TitleIconWrapper><FaMicrophone /></TitleIconWrapper>
