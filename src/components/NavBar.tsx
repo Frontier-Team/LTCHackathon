@@ -51,7 +51,7 @@ const links = [
   { to: "/agenda", label: "Agenda" },
   { to: "/hack", label: "The Hack" },
   { to: "/conduct", label: "Conduct" },
-  { to: "/accessibility", label: "Accessibility" },
+  { to: "/support", label: "Support" },
 ];
 
   return ( 
