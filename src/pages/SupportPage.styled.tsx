@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 export const AccessibilityCards = styled.div`
   display: grid;
@@ -7,7 +8,7 @@ export const AccessibilityCards = styled.div`
   margin-top: 4rem;
 `;
 
-export const AccessibilityCard = styled.div<{
+export const AccessibilityCard = styled(motion.div)<{
   variant: "primary" | "outline";
   side: "left" | "right";
 }>`

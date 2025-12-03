@@ -1,10 +1,13 @@
 import { CenteredParagraph, Heading, PageContainer, Paragraph } from "../styles/sharedStyles";
 import {
   AccessibilityCards,
-  AccessibilityCard,
+  AccessibilityCard as StyledAccessibilityCard,
   AccessibilityIconCircle,
   AccessibilityCardTitle,
 } from "./SupportPage.styled";
+import { Variants, motion } from "framer-motion";
+
+const AccessibilityCard = motion(StyledAccessibilityCard);
 
 const accessibilityItems = [
   {
@@ -29,7 +32,7 @@ const accessibilityItems = [
     title: "Disability / Additional Assistance",
     description: (
       <>
-        We strive to create an event where everyone can succeed. This means removing barriers, offering reasonable adjustments, and ensuring accessible tools and flexible arrangements. If you need any adjustments on the day, speak to an organiser or supporter. Or email us in advance at {}
+        We strive to create an event where everyone can succeed. This means removing barriers, offering reasonable adjustments, and ensuring accessible tools and flexible arrangements. If you need any adjustments on the day, speak to an organiser or supporter. Or email us in advance at{" "}
         <a href="mailto:IP&Ihackathon@lloydsbanking.com">IP&amp;Ihackathon@lloydsbanking.com</a>
       </>
     ),
@@ -39,7 +42,7 @@ const accessibilityItems = [
     title: "Food",
     description: (
       <>
-        Snacks will be served throughout the day, and lunch will also be provided. Your dietary requirements were taken during registration and will be catered for. If you need to discuss anything further, please speak to an organiser or supporter. Or email us in advance at {}
+        Snacks will be served throughout the day, and lunch will also be provided. Your dietary requirements were taken during registration and will be catered for. If you need to discuss anything further, please speak to an organiser or supporter. Or email us in advance at{" "}
         <a href="mailto:IP&Ihackathon@lloydsbanking.com">IP&amp;Ihackathon@lloydsbanking.com</a>
       </>
     ),
@@ -72,6 +75,18 @@ const accessibilityItems = [
 ];
 
 export const SupportPage = () => {
+  const cardVariants: Variants = {
+    hidden: (custom: "left" | "right") => ({
+      opacity: 0,
+      x: custom === "left" ? -50 : 50,
+    }),
+    visible: () => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    }),
+  };
+
   return (
     <PageContainer>
       <Heading>Accessibility</Heading>
@@ -87,7 +102,16 @@ export const SupportPage = () => {
           const side = index % 2 === 0 ? "left" : "right";
 
           return (
-            <AccessibilityCard key={item.title} variant={variant} side={side}>
+            <AccessibilityCard
+              key={item.title}
+              variant={variant}
+              side={side}
+              custom={side}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <AccessibilityIconCircle side={side}>
                 {item.emoji}
               </AccessibilityIconCircle>
