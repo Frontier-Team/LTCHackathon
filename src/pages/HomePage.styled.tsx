@@ -162,15 +162,15 @@ export const MapToggleButton = styled.button`
   border: none;
   padding: 0.5rem;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   transition: all 0.3s ease;
 
   &:hover {
