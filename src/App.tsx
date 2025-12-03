@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
-import { AccessibilityPage } from "./pages/AccessibilityPage";
+import { SupportPage } from "./pages/SupportPage";
 import { ConductPage } from "./pages/ConductPage";
 import { HomePage } from "./pages/HomePage";
 import { HackersPage } from "./pages/HackersPage";
@@ -18,7 +18,7 @@ export const App = () => {
           <Route path="/agenda" element={<TalkAgendaPage />} />
           <Route path="/hack" element={<HackersPage />} />
           <Route path="/conduct" element={<ConductPage />} />
-          <Route path="/accessibility" element={<AccessibilityPage />} />
+          <Route path="/support" element={<SupportPage />} />
         </Routes>
       </HashRouter>
     </AppThemeProvider>
