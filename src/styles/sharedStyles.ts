@@ -6,6 +6,15 @@ export const pageContainerStyles = () => css`
   margin: auto;
   max-width: 1000px;
   padding: 2.5rem;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    padding: 1rem;
+  }
 `;
 
 export const buttonAndLinkStyles = (theme: Theme) => css`
