@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaCalendarAlt, FaMapMarkerAlt, FaMapPin, FaWifi } from "react-icons/fa";
+import { FaCalendarAlt, FaCamera, FaExclamationTriangle, FaMapMarkerAlt, FaMapPin, FaUsers, FaWifi } from "react-icons/fa";
 import HeroComponent from "../components/HeroComponent";
 import { Paragraph } from "../styles/sharedStyles";
 import db from "../db.json";
+import { InfoItem, InfoList } from "./HackersPage.styled";
 import {
   AddressText,
   CloseButton,
@@ -178,6 +179,38 @@ export const HomePage: React.FC = () => {
             <ContentCard aria-label="WiFi connection information">
               <WifiNotice>{home.wifi.description}</WifiNotice>
             </ContentCard>
+          </Section>
+
+          <Section as="section" aria-labelledby="photography-heading">
+            <SectionTitle id="photography-heading">
+              <IconWrapper><FaCamera /></IconWrapper>
+              {home.photography.title}
+            </SectionTitle>
+            <ContentCard>
+              <Paragraph>{home.photography.description}</Paragraph>
+            </ContentCard>
+          </Section>
+
+          <Section as="section" aria-labelledby="organizers-heading">
+            <SectionTitle id="organizers-heading">
+              <IconWrapper><FaUsers /></IconWrapper>
+              {home.organizers.title}
+            </SectionTitle>
+            <ContentCard>
+              <Paragraph>{home.organizers.description}</Paragraph>
+            </ContentCard>
+          </Section>
+
+          <Section as="section" aria-labelledby="external-participants-heading">
+            <SectionTitle id="external-participants-heading">
+              <IconWrapper><FaExclamationTriangle /></IconWrapper>
+              {home.externalParticipants.title}
+            </SectionTitle>
+            <InfoList>
+              {home.externalParticipants.items.map((item, index) => (
+                <InfoItem key={index}>{item}</InfoItem>
+              ))}
+            </InfoList>
           </Section>
         </ContentBody>
         <Footer as="footer" aria-label="Contact information">

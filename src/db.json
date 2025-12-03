@@ -1,81 +1,4 @@
 {
-  "auctionWorks": [
-    {
-      "id": 1,
-      "name": "Colin Plaice",
-      "occupation": "Student",
-      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
-      "contact": [
-        "Website - https://illustrationtoxic.wixsite.com/illustration-toxic",
-        "Instagram - https://www.instagram.com/illustrations.toxic",
-        "LinkedIn - https://www.linkedin.com/in/colin-plaice-51b46927b"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 2,
-      "name": "Daria Naidonova",
-      "occupation": "Student",
-      "details": "Studying Experience Design (BDes Hons) at University of Dundee",
-      "contact": [
-        "Instagram - https://www.instagram.com/naidenovka007"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 3,
-      "name": "Kayley Campbell",
-      "occupation": "Student",
-      "details": "Studying Product Design (MSc) at University of Dundee",
-      "contact": [
-        "Linktree - https://linktr.ee/GingerGhouls",
-        "LinkedIn - https://www.linkedin.com/in/kayley-campbell-7631a4219",
-        "Instagram - https://www.instagram.com/gingerghouls"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 4,
-      "name": "Anna Rae",
-      "occupation": "Jeweller",
-      "details": "Working at G&A Jewellers",
-      "contact": [
-        "Instagram - https://www.instagram.com/jewel_a_rae",
-        "Email - araejewellery@gmail.com"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 5,
-      "name": "Amy Rodger",
-      "occupation": "Design Researcher",
-      "details": "Researching at Scottish Widows",
-      "contact": [
-        "LinkedIn - https://www.linkedin.com/in/amyrodgercs"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 6,
-      "name": "Yi Han",
-      "occupation": "Interaction Designer",
-      "details": "Designing at Scottish Widows",
-      "contact": [
-        "LinkedIn - https://www.linkedin.com/in/yiiihan"
-      ],
-      "isFilterable": true
-    },
-    {
-      "id": 7,
-      "name": "Rachel White",
-      "occupation": "Junior Designer",
-      "details": "Designing at Scottish Widows",
-      "contact": [
-        "LinkedIn - https://www.linkedin.com/in/rachel-white-ba4078198"
-      ],
-      "isFilterable": true
-    }
-  ],
   "schedule": [
     {
       "time": "09:00",
@@ -114,230 +37,6 @@
       "description": "Once the event is over, drinks and canapes will be provided in the Canongate room."
     }
   ],
-  "expos": [
-    {
-      "id": 1,
-      "name": "Adviser Reviser",
-      "description": "The adviser lab will give you a refresher of the adviser market, a run down of their systems and their plans for future delivery"
-    },
-    {
-      "id": 2,
-      "name": "Personalisation A/B Testing",
-      "description": "A/B Testing empowers fast, confident decisions backed by data optimising headlines, layouts and journeys helps us understand what truly matters."
-    },
-    {
-      "id": 3,
-      "name": "Accessibility",
-      "description": "We’ll outline our approach to accessibility testing—focusing on how we ensure that every digital experience we deliver is both functional and inclusive. This involves rigorous validation across a range of user scenarios, devices, and assistive technologies to confirm that our solutions meet accessibility standards and provide equitable access for all users."
-    },
-    {
-      "id": 4,
-      "name": "Gamifying User Experiences",
-      "description": "See how we are using games and gamified experiences to boost customer engagement and education. With live demos on new tools to the group like Unity and Rive as well as a hands on demo with our first gamified education experience brought to the Scottish Widows app."
-    },
-    {
-      "id": 5,
-      "name": "Connect Microservice",
-      "description": "Connect is a no-code/low-code orchestration platform that lets users build automated workflows—called Flows—using modular Blocks like Send SMS” or “Query Data.” It supports both synchronous and asynchronous actions and integrates easily with existing APIs. Trigger Options: Scheduled, ad hoc, and (soon) event-driven Tech Stack: NodeJS, Docker, Kubernetes, GCP Use Case: Notify customers of retirement payment progress via SMS using Pega and DCM3. Connect accelerates delivery by reusing existing business logic, improves developer experience through shared utilities, and is backed by strong documentation and cross-team collaboration."
-    },
-    {
-      "id": 6,
-      "name": "Content Square",
-      "description": "An introduction to ContentSquare, a new and creepy tool introduced to IP&I to help us better understand our customers usage of our digital estate."
-    },
-    {
-      "id": 7,
-      "name": "Interstellar",
-      "description": "In this session, the Interstellar team will explore how component-based architecture empowers engineers to build scalable, brand-consistent web journeys across multiple platforms—including Embark, Waterfront, and Enterprise environments."
-    },
-    {
-      "id": 8,
-      "name": "Predictive Engagement",
-      "description": "In this session, we’ll demonstrate how Genesys leverages AI-driven predictive engagement to optimise the customer journey for solar panel sales. By analysing user behaviour on the website, Genesys can assess the likelihood of a customer not completing a desired outcome—such as making a purchase—and proactively tailor support strategies."
-    }
-  ],
-  "talks": [
-    {
-      "id": 1,
-      "time": "09:30",
-      "topic": "Welcome and the Game Plan ahead!",
-      "speakers": [
-        "Derek Shanks"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 2,
-      "time": "09:40",
-      "topic": "Beginning of the People Adventure",
-      "speakers": [
-        "Rose Ulldemolins",
-        "Nick Grant"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 3,
-      "time": "09:55",
-      "topic": "Strategic Update",
-      "speakers": [
-        "Amit Thawani"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 4,
-      "time": "10:25",
-      "topic": "IVR Game",
-      "speakers": [
-        "Nick Grant"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 5,
-      "time": "10:35",
-      "topic": "GCOO Sustainability - Kettle v Logon",
-      "speakers": [
-        "Derek Shanks",
-        "Iain Frame"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 6,
-      "time": "11:05",
-      "topic": "Break",
-      "speakers": [],
-      "location": "Canongate"
-    },
-    {
-      "id": 7,
-      "time": "11:20",
-      "topic": "Strategic Update",
-      "speakers": [
-        "Amit Thawani"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 8,
-      "time": "11:55",
-      "topic": "IVR Game",
-      "speakers": [
-        "Nick Grant",
-        "Rose Ulldemolins"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 9,
-      "time": "12:05",
-      "topic": "Quantum Computing",
-      "speakers": [
-        "Professor Simon Gay, University of Glasgow"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 10,
-      "time": "12:50",
-      "topic": "Continuing the People Adventure",
-      "speakers": [
-        "Rose Ulldemolins",
-        "Nick Grant"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 11,
-      "time": "13:00",
-      "topic": "Networking lunch",
-      "speakers": [],
-      "location": "Canongate"
-    },
-    {
-      "id": 12,
-      "time": "13:45",
-      "topic": "Transition to Dunedin for Expo",
-      "speakers": [
-        "All"
-      ],
-      "location": "Dunedin"
-    },
-    {
-      "id": 13,
-      "time": "13:50",
-      "topic": "Waterfront Expo",
-      "speakers": [
-        "Waterfront Various Colleagues"
-      ],
-      "location": "Dunedin"
-    },
-    {
-      "id": 14,
-      "time": "14:40",
-      "topic": "Break",
-      "speakers": [],
-      "location": "Dunedin"
-    },
-    {
-      "id": 15,
-      "time": "14:50",
-      "topic": "Waterfront Expo",
-      "speakers": [
-        "Waterfront Various Colleagues"
-      ],
-      "location": "Dunedin"
-    },
-    {
-      "id": 16,
-      "time": "15:40",
-      "topic": "Transition back to St Giles from Expo",
-      "speakers": [
-        "All"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 17,
-      "time": "15:45",
-      "topic": "Results of People Adventure and IVR Game",
-      "speakers": [
-        "Rose Ulldemolins",
-        "Nick Grant"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 18,
-      "time": "15:55",
-      "topic": "Agentic AI",
-      "speakers": [
-        "Aritra Chakravarty"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 19,
-      "time": "16:55",
-      "topic": "Close",
-      "speakers": [
-        "Amit Thawani",
-        "Derek Shanks"
-      ],
-      "location": "St Giles"
-    },
-    {
-      "id": 20,
-      "time": "17:00",
-      "topic": "Social",
-      "speakers": [
-        ""
-      ],
-      "location": "Canongate"
-    }
-  ],
   "hackers": [
     {
       "welcome": "Hello Hackers! 👋",
@@ -345,7 +44,7 @@
       "importantInfo": {
         "title": "Devices & Set-Up",
         "items": [
-            "Please bring your own personal devices to participate.",
+          "Please bring your own personal devices to participate.",
           "You will code in a sandbox environment enabled for these 2 days. Login details will be provided at the venue."
         ]
       },
@@ -497,7 +196,7 @@
     "location": {
       "title": "Getting here",
       "address": "Lloyds Banking Group, Wing A & B, 22nd, 23rd and 24th Floor, Tower 2, Sattva Knowledge Park, Hitec City, Hyderabad, Telangana - 500081",
-      "transport": "Transport between the University and Venue will be arranged by LTC",
+      "transport": "Transport to the venue will be arranged by Lloyds Technology Centre through Company Cabs",
       "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395.85499019360776!2d78.3789896180973!3d17.430148513850565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300552ecdf9%3A0xbdaa716d8948f405!2sLloyds%20Technology%20Centre%20(%20Knowledge%20Park%20)!5e0!3m2!1sen!2suk!4v1763983338734!5m2!1sen!2suk"
     },
     "wifi": {
@@ -508,6 +207,20 @@
       "contactText": "Questions? Contact us at",
       "email": "IP&Ihackathon@lloydsbanking.com",
       "supportText": "Our organisers and support team will be available to help during the event."
+    },
+    "photography": {
+      "title": "Photography",
+      "description": "Please note that personal photography is not permitted during the event. Official photos will be shared by the hackathon organizers."
+    },
+    "organizers": {
+      "title": "Venue Access",
+      "description": "For external participants, please remain on Floor 23 where all hackathon activities and facilities are located. Floors 22 and 24 are restricted areas."
+    },
+    "externalParticipants": {
+      "title": "Please note",
+      "items": [
+        "We kindly ask all participants to respect the rules and guidelines. Following these rules ensures a safe and smooth experience for everyone. Any breaches to these will result in you being asked to leave the event.  Thank you for your cooperation."
+      ]
     }
   },
   "resources": [
@@ -754,5 +467,38 @@
         "link": "https://www.femaleinvest.com/en-gb"
       }
     ]
+  },
+  "conduct": {
+    "title": "Code of Conduct",
+    "introduction": "We aim to provide a friendly and supportive environment for all attendees. Let's ensure everyone gets the most from the day.",
+    "valuesTitle": "Please follow the Lloyds Banking Group values",
+    "values": [
+      {
+        "name": "Inclusive",
+        "description": "Recognise and celebrate the things that differentiate us, be inclusive in your actions and language. Help us make the event something for everyone to benefit from.",
+        "icon": "FaUsers"
+      },
+      {
+        "name": "Sustainability",
+        "description": "Travel sustainably and minimise waste at the event. Don't throw away reusable giveaway items - if you don't need/want it, don't accept it.",
+        "icon": "FaLeaf"
+      },
+      {
+        "name": "Trust",
+        "description": "Assume colleagues are working in our best interests and trust them in their endeavours.",
+        "icon": "FaHandshake"
+      },
+      {
+        "name": "Bold",
+        "description": "Be prepared to meet new people, learn new things and experiment with technology. Push yourself out of your comfort zone, do something new and enjoy the experience.",
+        "icon": "FaRocket"
+      },
+      {
+        "name": "People First",
+        "description": "Treat each other with respect and go the extra mile to support your colleagues. Be prepared to provide those around you with help, guidance and support.",
+        "icon": "FaHeart"
+      }
+    ],
+    "closing": "If you witness or experience inappropriate behaviour, please address it respectfully or speak to one of the event organisers."
   }
 }

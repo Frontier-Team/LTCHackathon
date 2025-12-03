@@ -1,6 +1,7 @@
 import { CenteredParagraph, Heading, PageContainer, Paragraph } from "../styles/sharedStyles";
 import {
   AccessibilityCards,
+  AccessibilityCardWrapper,
   AccessibilityCard as StyledAccessibilityCard,
   AccessibilityIconCircle,
   AccessibilityCardTitle,
@@ -27,16 +28,6 @@ const accessibilityItems = [
     description:
       "There will be around 220 guests at this event.",
     emoji: "👥",
-  },
-  {
-    title: "Disability / Additional Assistance",
-    description: (
-      <>
-        We strive to create an event where everyone can succeed. This means removing barriers, offering reasonable adjustments, and ensuring accessible tools and flexible arrangements. If you need any adjustments on the day, speak to an organiser or supporter. Or email us in advance at{" "}
-        <a href="mailto:IP&Ihackathon@lloydsbanking.com">IP&amp;Ihackathon@lloydsbanking.com</a>
-      </>
-    ),
-    emoji: "♿",
   },
   {
     title: "Food",
@@ -92,8 +83,8 @@ export const SupportPage = () => {
       <Heading>Accessibility</Heading>
 
       <CenteredParagraph>
-        Our aim is to make our event inclusive, welcoming and accessible for all. We will
-        have members of the team available to assist you on the day.
+        We strive to create an event where everyone can succeed. This means removing barriers, offering reasonable adjustments, and ensuring accessible tools and flexible arrangements. If you need any adjustments on the day, speak to an organiser or supporter. Or email us in advance at{" "}
+        <a href="mailto:IP&Ihackathon@lloydsbanking.com">IP&amp;Ihackathon@lloydsbanking.com</a>
       </CenteredParagraph>
 
       <AccessibilityCards>
@@ -102,28 +93,29 @@ export const SupportPage = () => {
           const side = index % 2 === 0 ? "left" : "right";
 
           return (
-            <AccessibilityCard
-              key={item.title}
-              variant={variant}
-              side={side}
-              custom={side}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-            >
+            <AccessibilityCardWrapper key={item.title}>
               <AccessibilityIconCircle side={side}>
                 {item.emoji}
               </AccessibilityIconCircle>
 
-              <div>
-                <AccessibilityCardTitle variant={variant}>
-                  {item.title}
-                </AccessibilityCardTitle>
+              <AccessibilityCard
+                variant={variant}
+                side={side}
+                custom={side}
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <div>
+                  <AccessibilityCardTitle variant={variant}>
+                    {item.title}
+                  </AccessibilityCardTitle>
 
-                <Paragraph>{item.description}</Paragraph>
-              </div>
-            </AccessibilityCard>
+                  <Paragraph>{item.description}</Paragraph>
+                </div>
+              </AccessibilityCard>
+            </AccessibilityCardWrapper>
           );
         })}
       </AccessibilityCards>
