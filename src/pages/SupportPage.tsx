@@ -2,13 +2,10 @@ import { CenteredParagraph, Heading, PageContainer, Paragraph } from "../styles/
 import {
   AccessibilityCards,
   AccessibilityCardWrapper,
-  AccessibilityCard as StyledAccessibilityCard,
+  AccessibilityCard,
   AccessibilityIconCircle,
   AccessibilityCardTitle,
 } from "./SupportPage.styled";
-import { Variants, motion } from "framer-motion";
-
-const AccessibilityCard = motion(StyledAccessibilityCard);
 
 const accessibilityItems = [
   {
@@ -66,18 +63,6 @@ const accessibilityItems = [
 ];
 
 export const SupportPage = () => {
-  const cardVariants: Variants = {
-    hidden: (custom: "left" | "right") => ({
-      opacity: 0,
-      x: custom === "left" ? -50 : 50,
-    }),
-    visible: () => ({
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    }),
-  };
-
   return (
     <PageContainer>
       <Heading>Support</Heading>
@@ -101,11 +86,6 @@ export const SupportPage = () => {
               <AccessibilityCard
                 variant={variant}
                 side={side}
-                custom={side}
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
               >
                 <div>
                   <AccessibilityCardTitle variant={variant}>

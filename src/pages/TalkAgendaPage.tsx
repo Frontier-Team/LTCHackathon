@@ -204,14 +204,6 @@ export const TalkAgendaPage = () => {
               <TimelineRow
                 key={`${activeDay}-${index}`}
                 side={side}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{
-                  duration: 0.45,
-                  ease: "easeOut",
-                  delay: index * 0.06,
-                }}
               >
                 <TimelineCard side={side} variant={variant}>
                   <TimeLabel>{formatTimeRange(slot)}</TimeLabel>
