@@ -6,51 +6,47 @@
     },
     {
       "time": "08:45 - 09:00",
-      "description": "Seating completion in Hack Venue"
+      "description": "Seat/ Table allocation."
     },
     {
-      "time": "09:00 - 09:20",
-      "description": "Kick-off Session - Welcome note by Amit Thawani and Sirisha Voruganti. Includes a welcome message, motivating participants"
+      "time": "09:00 - 09:10",
+      "description": "Kick-off Session - Welcome note by Amit Thawani and Sirisha Voruganti."
+    },
+    {
+      "time": "09:10 - 09:20",
+      "description": "Kick-off Session - Expectation setting by Amit Thawani, Laura Armstrong and Aritra Chakravarty."
+    },
+    {
+      "time": "09:20 - 09:25",
+      "description": "Kick-off Session - Physical and digital security policy and fire safety guidelines overview by Harpal Garewal. Physical and digital security policy and fire safety guidelines overview"
     },
     {
       "time": "09:25 - 09:30",
-      "description": "Kick-off Session - Insights from the LTC CTO by Ravi Kappagantu. Sharing motivational insights as a senior leader"
+      "description": "Kick-off Session - Hackathon Overview & Resources by Chinni Vasudeva."
     },
     {
-      "time": "09:30 - 09:35",
-      "description": "Kick-off Session - Health and safety by Harpal Garewal. Physical and digital security policy and fire safety guidelines overview"
-    },
-    {
-      "time": "09:35 - 09:55",
-      "description": "Kick-off Session - Hackathons as innovation engine by Mukul Saini. Context for the event; Hackathon as an innovation instrument; Tool to implement innovation in a hack set up"
-    },
-    {
-      "time": "09:55 - 10:05",
-      "description": "Kick-off Session - Hackathon Overview & Resources by Chinni Vasudeva. Hackathon format overview"
-    },
-    {
-      "time": "10:05 - 10:20",
-      "description": "Tooling/Resource - Learning Session by Cloud Sandbox. Sandbox Overview"
-    },
-    {
-      "time": "10:20 - 11:20",
+      "time": "09:30 - 10:30",
       "description": "Set up IT - Presentation and set up time by Cloud SMEs from sandbox and LTC. Wi-fi set up, Sandbox access and queries"
     },
     {
-      "time": "11:20 - 11:30",
+      "time": "10:30 - 10:40",
       "description": "Break & Networking"
     },
     {
-      "time": "11:30 - 13:30",
+      "time": "10:40 - 12:40",
       "description": "Hack - Ideation Phase. Hack to proceed, coaches to support and walk around"
     },
     {
-      "time": "13:30 - 14:30",
+      "time": "12:40 - 13:40",
       "description": "Lunch & Networking"
     },
     {
+      "time": "13:40 - 14:30",
+      "description": "Hack - Build and Test 1. Hack to proceed, coaches to support and walk around"
+    },
+    {
       "time": "14:30 - 15:45",
-      "description": "Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+      "description": "Hack - Build and Test 2. Hack to proceed, coaches to support and walk around"
     },
     {
       "time": "15:45 - 16:00",
@@ -58,11 +54,11 @@
     },
     {
       "time": "16:00 - 17:30",
-      "description": "Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+      "description": "Hack - Build and Test 3. Hack to proceed, coaches to support and walk around"
     },
     {
       "time": "17:30",
-      "description": "Day ends - internal participants can stay till 19:30 but will have to arrange their own commute back home"
+      "description": "Day ends (but hack continues*). *Internal participants can choose to stay back and continue the hack. "
     },
     {
       "time": "08:00 - 08:45",
@@ -70,39 +66,43 @@
     },
     {
       "time": "08:45 - 11:45",
-      "description": "Day 2: Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+      "description": "Day 2: Hack - Build and Test 4. Hack to proceed, coaches to support and walk around"
     },
     {
-      "time": "11:45 - 12:15",
-      "description": "Day 2: Hack - Wrap Up. Teams to put together the presentation in prescribed format"
+      "time": "11:45 - 12:00",
+      "description": "Day 2: Break & Networking"
     },
     {
-      "time": "12:15 - 13:15",
-      "description": "Day 2: Pitch - Presenting back to Hackathon Guardians. All teams present back to the panel comprising of hackathon guardians for 5 minutes each. The two panels shortlist at least 2 teams from a problem statement/use case. 20 teams shortlisted in total for final judgement round. This round of shortlisting will continue during lunch"
+      "time": "11:45 - 12:45",
+      "description": "Day 2: Hack - Build and Test 5. Hack to proceed, coaches to support and walk around"
+    },
+    {
+      "time": "12:45 - 13:15",
+      "description": "Day 2: Preparation for pitch to the judges."
     },
     {
       "time": "13:15 - 13:45",
       "description": "Day 2: Lunch & Networking"
     },
     {
-      "time": "13:45 - 14:15",
-      "description": "Day 2: Pitch - Shortlist announced and preparing pitches. Coaches and Participating Teams. Shortlisted Hackers to start preparing their final pitches for presentations to the judges"
-    },
-    {
-      "time": "14:15 - 16:45",
-      "description": "Day 2: Pitch - Pitches to Judges. Each team has 8 minutes to pitch their idea and 2 mins for Q&A - 15 teams"
+      "time": "13:45 - 16:45",
+      "description": "Day 2: Pitch - Pitches to Judges by Participants. Each team has 3 minutes to pitch their idea and 2 mins for Q&A."
     },
     {
       "time": "16:45 - 17:00",
-      "description": "Day 2: Break & Networking. Break for participants while judges deliberate"
+      "description": "Day 2: Break & Networking. Break for participants whilst the judges deliberate"
     },
     {
-      "time": "16:45 - 17:00",
-      "description": "Day 2: Wrap Up - Judges Deliberate. Judges to pick top 3 winners"
+      "time": "16:45 - 16:55",
+      "description": "Day 2: Wrap Up - Judges Deliberate."
     },
     {
-      "time": "17:00 - 17:30",
-      "description": "Day 2: Wrap Up - Winners Announced, Awards & Closing Speeches. Announces Winners"
+      "time": "16:55 - 17:25",
+      "description": "Day 2: Wrap Up - Winners Announced & Awards & Closing Speeches."
+    },
+    {
+      "time": "17:25 - 17:30",
+      "description": "Day 2: Note of thanks by Mukul Saini"
     },
     {
       "time": "17:30",
@@ -282,11 +282,11 @@
       },
       "Pitches": {
         "title": "Pitches",
-        "description": "On day two, all teams will pitch their game to their assigned coaches. Coaches will then shortlist teams to present to our judging panel.",
-        "length": "Teams will have 5 minutes each to pitch to coaches. Shortlisted hackers will have 8 minutes + 2 minutes for Q&A when pitching to judges.",
-        "presentation": "You can use slides, a live demo, or any other format you like to present your game. Be creative and have fun!",
-        "coachTime": "Pitches to the coaches will begin at 12:15pm",
-        "judgeTime": "Pitches to the judges will begin at 2:15pm"
+        "description": "On day two, all teams will pitch their solutions directly to the judging panel.",
+        "length": "Each team will have 3 minutes to pitch their idea plus 2 minutes for Q&A. All 31 teams will be judged, with 10 winners selected - at least one from each problem statement category.",
+        "presentation": "You can use slides, a live demo, or any other format you like to present your solution. Be creative and have fun!",
+        "prepTime": "Teams should prepare their pitches between 12:45pm - 1:15pm",
+        "judgeTime": "Pitches to the judges will begin at 1:45pm and continue until 4:45pm"
       },
       "Awards": {
         "description": "The winning teams will be announced at the end of day two, with prizes as follows:",

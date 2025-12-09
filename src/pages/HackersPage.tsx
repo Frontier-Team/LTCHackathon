@@ -1,7 +1,7 @@
 import React from "react";
 // import React, { useState } from "react";
 // import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
-import { FaMicrophone, FaLaptop, FaTrophy, FaGavel, FaLightbulb, FaUsers } from "react-icons/fa";
+import { FaMicrophone, FaLaptop, FaTrophy, FaLightbulb, FaUsers } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
@@ -163,11 +163,11 @@ export const HackersPage: React.FC = () => {
         <Paragraph>{hacker.Pitches.length}</Paragraph>
         <Paragraph>{hacker.Pitches.presentation}</Paragraph>
         <InfoList>
-          <InfoItem>{hacker.Pitches.coachTime}</InfoItem>
+          <InfoItem>{hacker.Pitches.prepTime}</InfoItem>
           <InfoItem>{hacker.Pitches.judgeTime}</InfoItem>
         </InfoList>
 
-        <SectionTitle>
+        {/* <SectionTitle>
           <TitleIconWrapper><FaGavel /></TitleIconWrapper>
           {hacker.judgingTitle}
         </SectionTitle>
@@ -200,14 +200,14 @@ export const HackersPage: React.FC = () => {
               ))}
             </Accordion>
           ))}
-        </JudgingContainer>
+        </JudgingContainer> */}
       </>
       <>
         <SectionTitle>
           <TitleIconWrapper><FaTrophy /></TitleIconWrapper>
           Winners
         </SectionTitle>
-        <Paragraph>Judges will deliberate and will announce the winners at 5pm.</Paragraph>
+        <Paragraph>Judges will deliberate and announce the winners around 4:55pm.</Paragraph>
       </>
     </PageContainer>
   );
