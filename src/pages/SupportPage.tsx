@@ -26,7 +26,7 @@ const accessibilityItems = [
   {
     title: "Attendees",
     description:
-      "There will be around 220 guests at this event.",
+      "There will be around 160 guests at this event.",
     emoji: "👥",
   },
   {

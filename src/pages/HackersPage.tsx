@@ -1,7 +1,7 @@
 import React from "react";
 // import React, { useState } from "react";
 // import { FaDatabase, FaWallet, FaMicrophone, FaHome, FaFileAlt, FaRobot, FaChartLine, FaCalculator, FaChevronDown, FaShieldAlt, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
-import {  FaMicrophone, FaLaptop, FaTrophy, FaGavel, FaLightbulb } from "react-icons/fa";
+import { FaMicrophone, FaLaptop, FaTrophy, FaGavel, FaLightbulb, FaUsers } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 import db from "../db.json";
 import {
@@ -26,6 +26,11 @@ import {
   TitleIconWrapper,
   InfoList,
   InfoItem,
+  ChallengeSection,
+  SectionLabel,
+  TeamBox,
+  TeamTitle,
+  TeamMembers,
 } from "./HackersPage.styled";
 
 export const HackersPage: React.FC = () => {
@@ -72,6 +77,39 @@ export const HackersPage: React.FC = () => {
           {hacker.challengeTitle}
         </SectionTitle>
         <CenteredParagraph>{hacker.challengeDescription}</CenteredParagraph>
+
+        <SectionTitle>
+          <TitleIconWrapper><FaUsers /></TitleIconWrapper>
+          External Challengers
+        </SectionTitle>
+        <CenteredParagraph>Below are the challenges being tackled by our external participants.</CenteredParagraph>
+
+        <JudgingContainer>
+          {hacker.externalChallenges.map((challenge) => (
+            <Accordion key={challenge.id} title={`${challenge.id} ${challenge.title} - Team ${challenge.team}`}>
+              <ChallengeSection>
+                <SectionLabel>Business Problem</SectionLabel>
+                <Paragraph>{challenge.businessProblem}</Paragraph>
+              </ChallengeSection>
+              <ChallengeSection>
+                <SectionLabel>Hackable Scope</SectionLabel>
+                <Paragraph>{challenge.hackableScope}</Paragraph>
+              </ChallengeSection>
+              <TeamBox>
+                <TeamTitle>EL/Coach: {challenge.coach}</TeamTitle>
+                <TeamMembers>
+                  <strong>Team members:</strong><br />
+                  {challenge.members.map((member, idx) => (
+                    <React.Fragment key={idx}>
+                      {member}
+                      {idx < challenge.members.length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </TeamMembers>
+              </TeamBox>
+            </Accordion>
+          ))}
+        </JudgingContainer>
 
         {/* <ChallengesGrid>
           {hacker.challenges.map((challenge) => (

@@ -48,6 +48,118 @@ export const InfoItem = styled.li`
   }
 `;
 
+export const ChallengeGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+`;
+
+export const ChallengeCard = styled.div`
+  background: ${({ theme }) => theme.colors.white};
+  border: 2px solid ${({ theme }) => theme.colors.teal};
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px ${({ theme }) => theme.colors.teal}20;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px ${({ theme }) => theme.colors.teal}30;
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 1.5rem;
+  }
+`;
+
+export const ChallengeHeader = styled.div`
+  margin-bottom: 1.5rem;
+`;
+
+export const ChallengeNumber = styled.h3`
+  font-size: 1.8rem;
+  color: ${({ theme }) => theme.colors.teal};
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const ChallengeTitle = styled.h4`
+  font-size: 1.4rem;
+  color: ${({ theme }) => theme.colors.black};
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  line-height: 1.4;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.2rem;
+  }
+`;
+
+export const ChallengeSection = styled.div`
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+
+export const SectionLabel = styled.h5`
+  font-size: 1.2rem;
+  color: ${({ theme }) => theme.colors.turquoise};
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.1rem;
+  }
+`;
+
+export const TeamBox = styled.div`
+  background: #E8F5E9;
+  border: 2px solid ${({ theme }) => theme.colors.teal};
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 1.25rem;
+  }
+`;
+
+export const TeamTitle = styled.p`
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: ${({ theme }) => theme.colors.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.1rem;
+  }
+`;
+
+export const TeamMembers = styled.p`
+  font-size: 1.2rem;
+  margin: 0;
+  color: ${({ theme }) => theme.colors.black};
+  line-height: 1.6;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.05rem;
+  }
+`;
+
 export const ChallengesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -65,7 +177,7 @@ export const ChallengesGrid = styled.div`
   }
 `;
 
-export const ChallengeCard = styled.div<{ isExpanded?: boolean }>`
+export const OldChallengeCard = styled.div<{ isExpanded?: boolean }>`
   background: ${({ theme }) => theme.colors.white};
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -82,7 +194,7 @@ export const ChallengeCard = styled.div<{ isExpanded?: boolean }>`
   }
 `;
 
-export const ChallengeHeader = styled.div`
+export const OldChallengeHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -133,7 +245,7 @@ export const IconWrapper = styled.div`
   }
 `;
 
-export const ChallengeTitle = styled.h3`
+export const OldChallengeTitle = styled.h3`
   flex: 1;
   color: ${({ theme }) => theme.colors.teal};
   font-size: 1rem;
@@ -207,13 +319,13 @@ export const ChallengeContent = styled.div`
   }
 `;
 
-export const ChallengeSection = styled.div`
+export const OldChallengeSection = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
 `;
 
-export const SectionLabel = styled.h4`
+export const OldSectionLabel = styled.h4`
   font-size: 0.9rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.turquoise};

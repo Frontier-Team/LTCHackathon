@@ -1,40 +1,112 @@
 {
   "schedule": [
     {
-      "time": "09:00",
-      "description": "Tea, coffee and pastries on arrival."
+      "time": "08:00 - 08:45",
+      "description": "Arrival, Registration, Refreshments"
     },
     {
-      "time": "09:30",
-      "description": "Welcome from Derek Shanks and an overview of the agenda. This will be followed by various sessions in St Giles, details of which can be found on the 'Agenda' tab."
+      "time": "08:45 - 09:00",
+      "description": "Seating completion in Hack Venue"
     },
     {
-      "time": "11:05",
-      "description": "There will be a 15 minute break for you to grab a tea or a coffee."
+      "time": "09:00 - 09:20",
+      "description": "Kick-off Session - Welcome note by Amit Thawani and Sirisha Voruganti. Includes a welcome message, motivating participants"
     },
     {
-      "time": "11:20",
-      "description": "The talk schedule continues, again on the same tables and in St Giles."
+      "time": "09:25 - 09:30",
+      "description": "Kick-off Session - Insights from the LTC CTO by Ravi Kappagantu. Sharing motivational insights as a senior leader"
     },
     {
-      "time": "13:00",
-      "description": "Lunch is served in Canongate with time for networking."
+      "time": "09:30 - 09:35",
+      "description": "Kick-off Session - Health and safety by Harpal Garewal. Physical and digital security policy and fire safety guidelines overview"
     },
     {
-      "time": "13:45",
-      "description": "Head to St Giles where you will be taken to the expo held in Dunedin."
+      "time": "09:35 - 09:55",
+      "description": "Kick-off Session - Hackathons as innovation engine by Mukul Saini. Context for the event; Hackathon as an innovation instrument; Tool to implement innovation in a hack set up"
     },
     {
-      "time": "14:40",
-      "description": "Quick break between expo sessions, with tea and coffee provided in Dunedin."
+      "time": "09:55 - 10:05",
+      "description": "Kick-off Session - Hackathon Overview & Resources by Chinni Vasudeva. Hackathon format overview"
     },
     {
-      "time": "14:50",
-      "description": "Meet back in Dunedin for the expo, following which we will finish back in St Giles room for the final talks and closing remarks."
+      "time": "10:05 - 10:20",
+      "description": "Tooling/Resource - Learning Session by Cloud Sandbox. Sandbox Overview"
     },
     {
-      "time": "17:00",
-      "description": "Once the event is over, drinks and canapes will be provided in the Canongate room."
+      "time": "10:20 - 11:20",
+      "description": "Set up IT - Presentation and set up time by Cloud SMEs from sandbox and LTC. Wi-fi set up, Sandbox access and queries"
+    },
+    {
+      "time": "11:20 - 11:30",
+      "description": "Break & Networking"
+    },
+    {
+      "time": "11:30 - 13:30",
+      "description": "Hack - Ideation Phase. Hack to proceed, coaches to support and walk around"
+    },
+    {
+      "time": "13:30 - 14:30",
+      "description": "Lunch & Networking"
+    },
+    {
+      "time": "14:30 - 15:45",
+      "description": "Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+    },
+    {
+      "time": "15:45 - 16:00",
+      "description": "Break & Networking"
+    },
+    {
+      "time": "16:00 - 17:30",
+      "description": "Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+    },
+    {
+      "time": "17:30",
+      "description": "Day ends - internal participants can stay till 19:30 but will have to arrange their own commute back home"
+    },
+    {
+      "time": "08:00 - 08:45",
+      "description": "Day 2: Arrival, Refreshments"
+    },
+    {
+      "time": "08:45 - 11:45",
+      "description": "Day 2: Hack - Build and Test. Hack to proceed, coaches to support and walk around"
+    },
+    {
+      "time": "11:45 - 12:15",
+      "description": "Day 2: Hack - Wrap Up. Teams to put together the presentation in prescribed format"
+    },
+    {
+      "time": "12:15 - 13:15",
+      "description": "Day 2: Pitch - Presenting back to Hackathon Guardians. All teams present back to the panel comprising of hackathon guardians for 5 minutes each. The two panels shortlist at least 2 teams from a problem statement/use case. 20 teams shortlisted in total for final judgement round. This round of shortlisting will continue during lunch"
+    },
+    {
+      "time": "13:15 - 13:45",
+      "description": "Day 2: Lunch & Networking"
+    },
+    {
+      "time": "13:45 - 14:15",
+      "description": "Day 2: Pitch - Shortlist announced and preparing pitches. Coaches and Participating Teams. Shortlisted Hackers to start preparing their final pitches for presentations to the judges"
+    },
+    {
+      "time": "14:15 - 16:45",
+      "description": "Day 2: Pitch - Pitches to Judges. Each team has 8 minutes to pitch their idea and 2 mins for Q&A - 15 teams"
+    },
+    {
+      "time": "16:45 - 17:00",
+      "description": "Day 2: Break & Networking. Break for participants while judges deliberate"
+    },
+    {
+      "time": "16:45 - 17:00",
+      "description": "Day 2: Wrap Up - Judges Deliberate. Judges to pick top 3 winners"
+    },
+    {
+      "time": "17:00 - 17:30",
+      "description": "Day 2: Wrap Up - Winners Announced, Awards & Closing Speeches. Announces Winners"
+    },
+    {
+      "time": "17:30",
+      "description": "Day 2: Day ends"
     }
   ],
   "hackers": [
@@ -50,6 +122,68 @@
       },
       "challengeTitle": "The Challenges",
       "challengeDescription": "Your team will be allocated a challenge based on a problem statement. The theme for the Hackathon is Agentic AI.",
+      "externalChallenges": [
+        {
+          "id": "1.1",
+          "title": "Improving IP&I Data Quality",
+          "businessProblem": "IP&I aims to have 80% of data on GCP by 2025. Manual data quality checks are slow and inconsistent. Data inaccuracies cause reporting risks, which affect regulatory returns",
+          "hackableScope": "Build an agentic solution that detects, categorises, and remediates data quality issues autonomously; focus on large-scale anomaly detection and remediation",
+          "team": "MEGALODON",
+          "coach": "Chinni Vasudeva",
+          "members": [
+            "Sushant Kumar",
+            "Vijay Aravynthan",
+            "Manas Mittal",
+            "Aditya Vadali",
+            "Bhaskar Itikela"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Financial Goal Coaching via Voice-based Agentic Agent",
+          "businessProblem": "There is a gap in the market for a non-human voice channel to coach customers on how to achieve their financial goals. This offering would give IP&I a complimentary USP to sit alongside the InvestAI proposition",
+          "hackableScope": "Explore conversational design for an AI voice-based coach to support customers and help us maintain advice/guidance boundaries in an interactive experience",
+          "team": "rm-rf",
+          "coach": "Roopa Borkar",
+          "members": [
+            "Nitin Grandhi",
+            "Sai Veekshith Kotha",
+            "Bheema Siddartha",
+            "Mohith Tondepu",
+            "Roshan Lal Kalluri"
+          ]
+        },
+        {
+          "id": "3.1",
+          "title": "Agentic AI Servicing Agent in Home Insurance",
+          "businessProblem": "Digital servicing journeys cover 85% of customer demands; remaining 15% require human agents. Building digital journeys for these is uneconomical meaning that human agents are required to support customers",
+          "hackableScope": "Create an AI voice servicing agent that can handle non-digital home insurance queries using available knowledge assets",
+          "team": "Nier Classification",
+          "coach": "Roopa Borkar",
+          "members": [
+            "Vidyathama R",
+            "Bidisha Shaw",
+            "Prajas Wadekar",
+            "Akshat Puneerth",
+            "Ch Shreyash"
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Automating Customer Communication Review for Compliance & Clarity",
+          "businessProblem": "IP&I Heritage produces over 3,500 types of customer letters. Reviewing these outputs against Consumer Duty standards and editorial tools (e.g., Acrolinx) is a highly manual, time-intensive process. Due to resource constraints, not all letters are reviewed, leading to unclear communications, increased contact centre calls, complaints, and rectification events",
+          "hackableScope": "Build an Agentic AI-powered solution that can autonomously create and review customer communication outputs from structured and unstructured product data, and against compliance, clarity standards, and other triggers, providing actionable insights and prioritisation for improvements",
+          "team": "Neural Nexus",
+          "coach": "Santhosh Kumar Miryala",
+          "members": [
+            "Shruti Dhasmana",
+            "Prit Kanadiya",
+            "Naveen Mishra",
+            "Sree Venkata Raman Rayaprolu",
+            "Lokabhiram Chintada"
+          ]
+        }
+      ],
       "challenges": [
         {
           "id": "1.1",
@@ -182,7 +316,7 @@
   "homepage": {
     "welcome": "Welcome to the CIO IP&I Hackathon!",
     "intro": [
-      "Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 220 participants to prototype bold new ideas.",
+      "Thank you for joining us for this fast-paced, creative sprint! Over the next 48 hours, you'll collaborate with around 160 participants to prototype bold new ideas.",
       "Form teams of up to five and tackle a real-world business challenge. Brainstorm, design, build, and pitch a working MVP from scratch.",
       "Volunteers and mentors are available throughout to guide you. Good luck, have fun, and let's innovate together!"
     ],
